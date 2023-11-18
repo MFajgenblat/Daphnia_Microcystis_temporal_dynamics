@@ -13,6 +13,7 @@ library(ggtext)
 library(cmdstanr)
 library(tidybayes)
 library(posterior)
+library(lme4)
 
 #-------------------------------------------------------------------------------
 # Reading and preprocessing data
@@ -28,6 +29,9 @@ summary_data <- read.csv("summary_data.csv", sep=";") %>%
          Daph_clone = factor(Daph_clone),
          MC_strain = factor(MC_strain))
 
+mean(summary_data$D12_alive/summary_data$N_individuals)
+sd(summary_data$D12_alive/summary_data$N_individuals)/sqrt(sum(summary_data$N_individuals))*100
+
 #-------------------------------------------------------------------------------
 # Exploratory visualization
 #-------------------------------------------------------------------------------
@@ -41,50 +45,13 @@ summary_data %>%
                                MC_season == "late" ~ "Late <i>Microcystis</i>")) %>%
   melt(id.vars = c("jar_ID", "MC_season", "Daph_season", "Daph_year", "N_individuals")) %>%
   mutate(day = as.numeric(gsub("_alive", "", gsub("D", "", variable)))) %>%
-  ggplot() +
-  geom_line(aes(x = day, y = value/N_individuals, group = jar_ID, color = Daph_year),
-            position = position_jitter(width = 0.02, height = 0.02), linewidth = 0.1) +
-  geom_smooth(aes(x = day, y = value/N_individuals, color = Daph_year, fill = Daph_year),
-              alpha = 0.1, formula = y ~ splines::ns(x, 3), method = "glm", size = 0.5) +
-  scale_x_continuous("Day", breaks = seq(0, 12, by = 2)) +
-  scale_y_continuous("Fraction of individuals surviving") +
-  scale_color_manual("Year", values = c("#0090C8", "#CE178C"), labels = c(2018, 2019)) +
-  scale_fill_manual("Year", values = c("#0090C8", "#CE178C"), labels = c(2018, 2019)) +
-  coord_cartesian(clip = "on", xlim = c(0,12), ylim = c(0,1)) +
-  facet_grid(MC_season ~ Daph_season) +
-  theme(panel.background = element_blank(),
-        panel.grid = element_line(color = "grey93"),
-        panel.border = element_rect(fill = NA, color = "black"),
-        strip.background = element_blank(),
-        strip.text.x = element_markdown(face = "bold", size = 8),
-        strip.text.y = element_markdown(face = "bold", size = 8),
-        axis.title = element_text(face = "bold", size = 8),
-        axis.text = element_text(size = 7),
-        legend.title = element_text(face = "bold", size = 8),
-        legend.text = element_text(size = 7),
-        legend.key = element_blank(),
-        legend.key.size = unit(0.3, "cm"))
-ggsave("Exploratory_visualization.png", width = 16, height = 10, units = "cm", dpi = 600)
-
-pd <- position_dodge(0.4)
-summary_data %>%
-  select(jar_ID, MC_season, Daph_season, Daph_year, N_individuals, D0_alive, D5_alive, D9_alive, D12_alive) %>%
-  mutate(Daph_year = factor(Daph_year),
-         Daph_season = case_when(Daph_season == "early" ~ "Early <i>Daphnia</i>",
-                                 Daph_season == "late" ~ "Late <i>Daphnia</i>"),
-         MC_season = case_when(MC_season == "early" ~ "Early <i>Microcystis</i>",
-                               MC_season == "late" ~ "Late <i>Microcystis</i>")) %>%
-  melt(id.vars = c("jar_ID", "MC_season", "Daph_season", "Daph_year", "N_individuals")) %>%
-  mutate(day = as.numeric(gsub("_alive", "", gsub("D", "", variable)))) %>%
   ggplot(aes(x = day, y = value/N_individuals, group = jar_ID, color = Daph_year)) +
   geom_line(linewidth = 0.2, position = position_dodge(width = 0.4)) +
   geom_point(size = 0.05, position = position_dodge(width = 0.4)) +
-  #geom_smooth(aes(x = day, y = value/N_individuals, color = Daph_year, fill = Daph_year),
-  #            alpha = 0.1, formula = y ~ splines::ns(x, 3), method = "glm", size = 0.5) +
   scale_x_continuous("Day", breaks = seq(0, 12, by = 2)) +
   scale_y_continuous("Fraction of individuals surviving", breaks = seq(0, 1, by = 0.2)) +
-  scale_color_manual("Year", values = c("#0090C8", "#CE178C"), labels = c(2018, 2019)) +
-  scale_fill_manual("Year", values = c("#0090C8", "#CE178C"), labels = c(2018, 2019)) +
+  scale_color_manual("Year", values = c("#8cad11","#f55600"), labels = c(2018, 2019)) +
+  scale_fill_manual("Year", values = c("#8cad11","#f55600"), labels = c(2018, 2019)) +
   coord_cartesian(clip = "on", xlim = c(0,12), ylim = c(0,1)) +
   facet_grid(MC_season ~ Daph_season) +
   theme(panel.background = element_blank(),
@@ -100,7 +67,9 @@ summary_data %>%
         legend.text = element_text(size = 7),
         legend.key = element_blank(),
         legend.key.size = unit(0.3, "cm"))
-ggsave("Exploratory_visualization.png", width = 16, height = 12, units = "cm", dpi = 600)
+ggsave("Exploratory_visualization.png", width = 16, height = 10, units = "cm", dpi = 600)
+
+summary(summary_data$D12_alive / summary_data$N_individuals)
 
 #-------------------------------------------------------------------------------
 # Binomial GLMM - Data preparation
@@ -181,15 +150,15 @@ fit_12_GxG <- readRDS("fit_12_GxG.rds")
 fit_9_GpG <- readRDS("fit_9_GpG.rds")
 fit_5_GpG <- readRDS("fit_5_GpG.rds")
 fit_12_GpG_tighterpriors <- readRDS("fit_12_GpG_tighterpriors.rds")
-fit_12_GpG <- readRDS("fit_12_GpG_widerpriors.rds")
+fit_12_GpG_widepriors <- readRDS("fit_12_GpG_widerpriors.rds")
 
 #-------------------------------------------------------------------------------
 # Binomial GLMM - Metadata and helper functions
 #-------------------------------------------------------------------------------
 
 covariate_metadata <- data.frame(name = c("beta_0", "beta_1", "beta_2", "beta_3"),
-                                 Covariate = factor(c("Intercept", "Early vs. late <i>Daphnia</i>", "Early vs. late <i>Microcystis</i>", "Synchronicity"),
-                                                    levels = c("Intercept", "Early vs. late <i>Daphnia</i>", "Early vs. late <i>Microcystis</i>", "Synchronicity")))
+                                 Covariate = factor(c("Intercept", "<i>Daphnia</i> timing", "<i>Microcystis</i> timing", "Contemporality"),
+                                                    levels = c("Intercept", "<i>Daphnia</i> timing", "<i>Microcystis</i> timing", "Contemporality")))
 
 expit <- function(x) {exp(x)/(1+exp(x))}
 
@@ -240,8 +209,8 @@ PPC1 <- fit_12_GpG %>%
   pivot_longer(c(Mean, Median, SD)) %>%
   ggplot() +
   geom_histogram(aes(x = value, fill = Daph_season), alpha = 0.5, position = "identity") +
-  scale_color_manual("Daphnia time", values = c("#8cad11", "#f55600"), labels = c("Early <i>Daphnia</i>", "Late <i>Daphnia</i>")) +
-  scale_fill_manual("Daphnia time", values = c("#8cad11", "#f55600"), labels = c("Early <i>Daphnia</i>", "Late <i>Daphnia</i>")) +
+  scale_color_manual("Daphnia time", values = c("#8cad11","#f55600"), labels = c("Early <i>Daphnia</i>", "Late <i>Daphnia</i>")) +
+  scale_fill_manual("Daphnia time", values = c("#8cad11","#f55600"), labels = c("Early <i>Daphnia</i>", "Late <i>Daphnia</i>")) +
   geom_vline(data = pivot_longer(summarize(group_by(summary_data, Daph_season),
                                            Mean = mean(D12_alive),
                                            Median = median(D12_alive),
@@ -281,8 +250,8 @@ PPC2 <- fit_12_GpG %>%
                                            SD = sd(D12_alive)),
                                  c(Mean, Median, SD)),
              aes(xintercept = value, color = MC_season)) +
-  scale_color_manual("Microcystis time", values = c("#8cad11", "#f55600"), labels = c("Early <i>Microcystis</i>", "Late <i>Microcystis</i>")) +
-  scale_fill_manual("Microcystis time", values = c("#8cad11", "#f55600"), labels = c("Early <i>Microcystis</i>", "Late <i>Microcystis</i>")) +
+  scale_color_manual("Microcystis time", values = c("#8cad11","#f55600"), labels = c("Early <i>Microcystis</i>", "Late <i>Microcystis</i>")) +
+  scale_fill_manual("Microcystis time", values = c("#8cad11","#f55600"), labels = c("Early <i>Microcystis</i>", "Late <i>Microcystis</i>")) +
   facet_wrap(~ name, scales = "free", switch = "x", ncol = 3) +
   scale_y_continuous(expand = c(0,0)) +
   theme(panel.background = element_blank(),
@@ -316,8 +285,8 @@ PPC3 <- fit_12_GpG %>%
                                            SD = sd(D12_alive)),
                                  c(Mean, Median, SD)),
              aes(xintercept = value, color = Synchronicity)) +
-  scale_color_manual("Temporality", values = c("#8cad11", "#f55600"), labels = c("Allotemporal", "Contemporal")) +
-  scale_fill_manual("Temporality", values = c("#8cad11", "#f55600"), labels = c("Allotemporal", "Contemporal")) +
+  scale_color_manual("Temporality", values = c("#8cad11","#f55600"), labels = c("Allotemporal", "Contemporal")) +
+  scale_fill_manual("Temporality", values = c("#8cad11","#f55600"), labels = c("Allotemporal", "Contemporal")) +
   facet_wrap(~ name, scales = "free", switch = "x", ncol = 3) +
   scale_y_continuous(expand = c(0,0)) +
   theme(panel.background = element_blank(),
@@ -351,8 +320,8 @@ PPC4 <- fit_12_GpG %>%
                                            SD = sd(D12_alive)),
                                  c(Mean, Median, SD)),
              aes(xintercept = value, color = Daph_year)) +
-  scale_color_manual("Year", values = c("#8cad11", "#f55600")) +
-  scale_fill_manual("Year", values = c("#8cad11", "#f55600")) +
+  scale_color_manual("Year", values = c("#8cad11","#f55600")) +
+  scale_fill_manual("Year", values = c("#8cad11","#f55600")) +
   facet_wrap(~ name, scales = "free", switch = "x", ncol = 3) +
   scale_y_continuous(expand = c(0,0)) +
   theme(panel.background = element_blank(),
@@ -454,9 +423,9 @@ rbind(data.frame(Prior = "Tighter (N(0,1))", spread_draws(fit_12_GpG_tighterprio
   left_join(covariate_metadata, by = "name") %>%
   mutate(name = factor(paste0(Covariate, " - ", c(2018,2019)[year]),
                        levels = rev(c("Intercept - 2018", "Intercept - 2019",
-                                      "Early vs. late <i>Daphnia</i> - 2018", "Early vs. late <i>Daphnia</i> - 2019",
-                                      "Early vs. late <i>Microcystis</i> - 2018", "Early vs. late <i>Microcystis</i> - 2019",
-                                      "Synchronicity - 2018", "Synchronicity - 2019"))),
+                                      "<i>Daphnia</i> timing - 2018", "<i>Daphnia</i> timing - 2019",
+                                      "<i>Microcystis</i> timing - 2018", "<i>Microcystis</i> timing - 2019",
+                                      "Contemporality - 2018", "Contemporality - 2019"))),
          Prior = factor(Prior, levels = c("Tighter (N(0,1))", "Regular (N(0,3))", "Wider (N(0,9))"))) %>%
   ggplot() +
   geom_vline(aes(xintercept = 0), linetype = "dashed", color = "grey50", size = 0.4) +
@@ -482,6 +451,28 @@ ggsave("BinomialGLMM_Prior_sensitivity_analysis.png", width = 16, height = 10, u
 #-------------------------------------------------------------------------------
 # Binomial GLMM - Numerical results
 #-------------------------------------------------------------------------------
+
+# Inference on parameters average across both years
+fit_12_GpG %>%
+  spread_draws(beta_0[year], beta_1[year], beta_2[year], beta_3[year]) %>%
+  pivot_longer(!c(.chain, .iteration, .draw, year)) %>%
+  mutate(year = c(2018,2019)[year]) %>%
+  left_join(covariate_metadata, by = "name") %>%
+  filter(Covariate != "Intercept") %>%
+  group_by(Covariate) %>%
+  summarize(Posterior_mean = mean(value),
+            Posterior_median = median(value),
+            Posterior_sd = sd(value),
+            Posterior_CrI_0025 = quantile(value, 0.025),
+            Posterior_CrI_0975 = quantile(value, 0.975),
+            Posterior_probability_positive = mean(value > 0)*100) %>%
+  arrange(Covariate)
+
+# Reduction in survival percentage points average across both years on the natural scale
+pp_reduction <- filter(spread_draws(fit_12_GpG, average_survival[year,treatment]), treatment %in% c(1,4))$average_survival - filter(spread_draws(fit_12_GpG, average_survival[year,treatment]), treatment %in% c(2,3))$average_survival
+mean(pp_reduction)
+quantile(pp_reduction, 0.025)
+quantile(pp_reduction, 0.975)
 
 # Inference on parameters per year
 fit_12_GpG %>%
@@ -516,6 +507,12 @@ fit_12_GpG %>%
             Posterior_probability_positive = mean(Difference > 0)*100) %>%
   arrange(Covariate)
 
+# Comparison of worst and best performing Daphnia clone
+mean((filter(spread_draws(fit_12_GpG, clone_effect[clone]), clone == 5)$clone_effect - filter(spread_draws(fit_12_GpG, clone_effect[clone]), clone == 4)$clone_effect) > 0)
+
+# Comparison of most and least toxic Microcystis strain
+mean((filter(spread_draws(fit_12_GpG, strain_effect[strain]), strain == 12)$strain_effect - filter(spread_draws(fit_12_GpG, strain_effect[strain]), strain == 10)$strain_effect) > 0)
+
 #-------------------------------------------------------------------------------
 # Binomial GLMM - Visualizing the fixed effects on the logit scale
 #-------------------------------------------------------------------------------
@@ -526,12 +523,12 @@ fit_12_GpG %>%
   left_join(covariate_metadata, by = "name") %>%
   ggplot() +
   geom_hline(aes(yintercept = 0), linetype = "dashed", color = "grey50", size = 0.4) +
-  stat_eye(aes(y = value, x = Covariate, color = factor(year), fill = factor(year)), position = position_dodge(width = 0.8), alpha = 0.4, point_alpha = 1, interval_alpha = 1, interval_size = 0.05) +
+  stat_eye(aes(y = value, x = Covariate, color = factor(year), fill = factor(year)), position = position_dodge(width = 0.8), alpha = 0.4, point_alpha = 1, interval_alpha = 1, interval_size = 0.05, adjust = 1.5) +
   scale_x_discrete("Variable") +
   scale_y_continuous("Effect on survival (logit scale)", expand = c(0,0)) +
-  scale_color_manual("Year", values = c("#0090C8", "#CE178C"), labels = c(2018, 2019)) +
-  scale_fill_manual("Year", values = c("#0090C8", "#CE178C"), labels = c(2018, 2019)) +
-  coord_cartesian(ylim = c(-4.4,4.4)) +
+  scale_color_manual("Year", values = c("#8cad11","#f55600"), labels = c(2018, 2019)) +
+  scale_fill_manual("Year", values = c("#8cad11","#f55600"), labels = c(2018, 2019)) +
+  coord_cartesian(ylim = c(-3.9,2.6)) +
   theme(panel.background = element_rect(fill = NA, color = NA),
         panel.grid.minor.y = element_line(color = "grey95"),
         panel.grid.major.y = element_line(color = "grey95"),
@@ -543,9 +540,9 @@ fit_12_GpG %>%
         axis.title = element_text(face = "bold", size = 8),
         legend.title = element_text(face = "bold", size = 8),
         legend.text = element_text(size = 7),
-        legend.key.size = unit(0.3, "cm"),
+        legend.key.size = unit(0.4, "cm"),
         legend.key = element_blank())
-ggsave("BinomialGLMM_Fixed_effects.png", width = 16, height = 8, units = "cm", dpi = 600)
+ggsave("BinomialGLMM_Fixed_effects.png", width = 16, height = 7, units = "cm", dpi = 600)
 
 #-------------------------------------------------------------------------------
 # Binomial GLMM - Visualizing the estimated survival per category
@@ -566,8 +563,8 @@ fit_12_GpG %>%
   geom_bar(stat = "identity", position = position_dodge(width = 0.65), width = 0.5) +
   geom_errorbar(aes(ymin = LI, ymax = UI), color = "black", width = 0, position = position_dodge(width = 0.65), size = 0.4) +
   scale_y_continuous("Average survival probability", expand = c(0,0), limits = c(0,1), breaks = seq(0, 1, by = 0.2)) +
-  scale_color_manual("Year", values = c("#0090C8", "#CE178C"), labels = c(2018, 2019)) +
-  scale_fill_manual("Year", values = c("#0090C8", "#CE178C"), labels = c(2018, 2019)) +
+  scale_color_manual("Year", values = c("#8cad11","#f55600"), labels = c(2018, 2019)) +
+  scale_fill_manual("Year", values = c("#8cad11","#f55600"), labels = c(2018, 2019)) +
   theme(panel.background = element_blank(),
         panel.grid.major.x = element_blank(),
         panel.grid.major.y = element_line(color = "grey93"),
@@ -593,7 +590,7 @@ clone_effects <- fit_12_GpG %>%
   left_join(data.frame(clone = 1:11,
                        Clone = levels(summary_data$Daph_clone))) %>%
   ggplot() +
-  stat_eye(aes(y = Clone, x = clone_effect), alpha = 0.4, point_alpha = 1, interval_alpha = 1, interval_size = 0.05, color = "#1c717a", fill = "#1c717a") +
+  stat_eye(aes(y = Clone, x = clone_effect), alpha = 0.4, point_alpha = 1, interval_alpha = 1, interval_size = 0.05, color = "#2b6a70", fill = "#2b6a70") +
   geom_vline(aes(xintercept = 0), linetype = "dashed") +
   scale_color_brewer("Credible\ninterval") +
   scale_x_continuous("Effect on <i>Daphnia</i> survival (logit scale)", expand = c(0,0)) +
@@ -619,7 +616,7 @@ strain_effects <- fit_12_GpG %>%
   left_join(data.frame(strain = 1:12,
                        Strain = levels(summary_data$MC_strain))) %>%
   ggplot() +
-  stat_eye(aes(y = Strain, x = strain_effect), alpha = 0.4, point_alpha = 1, interval_alpha = 1, interval_size = 0.05, color = "#C70039", fill = "#C70039") +
+  stat_eye(aes(y = Strain, x = strain_effect), alpha = 0.4, point_alpha = 1, interval_alpha = 1, interval_size = 0.05, color = "#99435c", fill = "#99435c") +
   geom_vline(aes(xintercept = 0), linetype = "dashed") +
   scale_color_brewer("Credible\ninterval") +
   scale_x_continuous("Effect on <i>Daphnia</i> survival (logit scale)", expand = c(0,0)) +
@@ -671,7 +668,54 @@ fit_12_GpG %>%
         axis.text = element_text(size = 7),
         legend.title = element_text(face = "bold", size = 8),
         legend.text = element_text(size = 7))
-ggsave("BinomialGLMM_GxG_heatmap.png", width = 16, height = 8, units = "cm", dpi = 600)
+ggsave("BinomialGLMM_GpG_heatmap.png", width = 16, height = 8, units = "cm", dpi = 600)
+
+#-------------------------------------------------------------------------------
+# Binomial GLMM - Comparison against saturated model
+#-------------------------------------------------------------------------------
+
+rbind(data.frame(Type = "Additive", spread_draws(fit_12_GpG, mu[jar_ID])),
+      data.frame(Type = "Interaction", spread_draws(fit_12_GxG, mu[jar_ID]))) %>%
+  pivot_wider(names_from = Type, values_from = mu) %>%
+  group_by(jar_ID) %>%
+  summarise(Additive_mean = mean(Additive),
+            Additive_L = quantile(Additive, 0.025),
+            Additive_U = quantile(Additive, 0.975),
+            Interaction_mean = mean(Interaction),
+            Interaction_L = quantile(Interaction, 0.025),
+            Interaction_U = quantile(Interaction, 0.975)) %>%
+  ggplot() +
+  geom_errorbar(aes(x = Additive_mean, ymin = Interaction_L, ymax = Interaction_U), linewidth = 0.2) +
+  geom_errorbarh(aes(xmin = Additive_L, xmax = Additive_U, y = Interaction_mean), linewidth = 0.2) +
+  geom_point(aes(x = Additive_mean, y = Interaction_mean), size = 1) +
+  scale_x_continuous("Linear predictor in the main, additive model") +
+  scale_y_continuous("Linear predictor in the saturated model") +
+  coord_equal() +
+  theme(panel.background = element_blank(),
+        panel.grid = element_line(color = "grey93"),
+        panel.border = element_rect(color = "black", fill = NA),
+        axis.title = element_text(face = "bold", size = 8),
+        axis.text = element_text(size = 7))
+ggsave("BinomialGLMM_GxG.png", width = 12, height = 16, units = "cm", dpi = 600)
+
+posterior_correlation <- sapply(seq(1, 8000, by = 10), function(i) cor(filter(spread_draws(fit_12_GpG, mu[jar_ID]), .draw == i)$mu, filter(spread_draws(fit_12_GxG, mu[jar_ID]), .draw == i)$mu))
+hist(posterior_correlation)
+1-mean(posterior_correlation)
+1-median(posterior_correlation)
+1-quantile(posterior_correlation, 0.025)
+1-quantile(posterior_correlation, 0.975)
+
+#-------------------------------------------------------------------------------
+# Binomial GLMM - Frequentist analysis
+#-------------------------------------------------------------------------------
+
+summary_data$D12_dead <- summary_data$N_individuals - summary_data$D12_alive
+summary_data$MC_strain <- factor(summary_data$MC_strain)
+
+fit <- glmer(cbind(D12_alive, D12_dead) ~ Daph_season + MC_season + Synchronicity + (1 | Daph_clone) + (1 | MC_strain), family = binomial("logit"), data = subset(summary_data, Daph_year == 2018))
+summary(fit)
+fit <- glmer(cbind(D12_alive, D12_dead) ~ Daph_season + MC_season + Synchronicity + (1 | Daph_clone) + (1 | MC_strain), family = binomial("logit"), data = subset(summary_data, Daph_year == 2019))
+summary(fit)
 
 #-------------------------------------------------------------------------------
 # Interval-censored survival analysis - Data preparation
@@ -743,8 +787,8 @@ saveRDS(fit_survival_widerpriors, "fit_survival_widerpriors.rds")
 #-------------------------------------------------------------------------------
 
 fit_survival <- readRDS("fit_survival.rds")
-fit_survival <- readRDS("fit_survival_tighterpriors.rds")
-fit_survival <- readRDS("fit_survival_widerpriors.rds")
+fit_survival_tighterpriors <- readRDS("fit_survival_tighterpriors.rds")
+fit_survival_widerpriors <- readRDS("fit_survival_widerpriors.rds")
 
 #-------------------------------------------------------------------------------
 # Interval-censored survival analysis - Convergence checks
@@ -813,7 +857,8 @@ fit_survival %>%
         axis.line.x = element_line(color = "black"),
         legend.title = element_text(face = "bold", size = 8),
         legend.text = element_text(size = 7),
-        legend.key = element_blank())
+        legend.key = element_blank(),
+        legend.key.size = unit(0.3, "cm"))
 ggsave("Survival_PPC.png", width = 16, height = 10, units = "cm", dpi = 600)
 
 #-------------------------------------------------------------------------------
@@ -827,9 +872,9 @@ rbind(data.frame(Prior = "Tighter (N(0,1))", spread_draws(fit_survival_tighterpr
   left_join(covariate_metadata, by = "name") %>%
   mutate(name = factor(paste0(Covariate, " - ", c(2018,2019)[year]),
                        levels = rev(c("Intercept - 2018", "Intercept - 2019",
-                                      "Early vs. late <i>Daphnia</i> - 2018", "Early vs. late <i>Daphnia</i> - 2019",
-                                      "Early vs. late <i>Microcystis</i> - 2018", "Early vs. late <i>Microcystis</i> - 2019",
-                                      "Synchronicity - 2018", "Synchronicity - 2019"))),
+                                      "<i>Daphnia</i> timing - 2018", "<i>Daphnia</i> timing - 2019",
+                                      "<i>Microcystis</i> timing - 2018", "<i>Microcystis</i> timing - 2019",
+                                      "Contemporality - 2018", "Contemporality - 2019"))),
          Prior = factor(Prior, levels = c("Tighter (N(0,1))", "Regular (N(0,3))", "Wider (N(0,9))"))) %>%
   ggplot() +
   geom_vline(aes(xintercept = 0), linetype = "dashed", color = "grey50", size = 0.4) +
@@ -899,12 +944,12 @@ fit_survival %>%
   left_join(covariate_metadata, by = "name") %>%
   ggplot() +
   geom_hline(aes(yintercept = 0), linetype = "dashed", color = "grey50", size = 0.4) +
-  stat_eye(aes(y = value, x = Covariate, color = factor(year), fill = factor(year)), position = position_dodge(width = 0.8), alpha = 0.4, point_alpha = 1, interval_alpha = 1, interval_size = 0.05) +
+  stat_eye(aes(y = value, x = Covariate, color = factor(year), fill = factor(year)), position = position_dodge(width = 0.8), alpha = 0.4, point_alpha = 1, interval_alpha = 1, interval_size = 0.05, adjust = 1.5) +
   scale_x_discrete("Variable") +
   scale_y_continuous("Effect on survival", expand = c(0,0)) +
-  scale_color_manual("Year", values = c("#0090C8", "#CE178C"), labels = c(2018, 2019)) +
-  scale_fill_manual("Year", values = c("#0090C8", "#CE178C"), labels = c(2018, 2019)) +
-  coord_cartesian(ylim = c(-1.9,1.9)) +
+  scale_color_manual("Year", values = c("#8cad11","#f55600"), labels = c(2018, 2019)) +
+  scale_fill_manual("Year", values = c("#8cad11","#f55600"), labels = c(2018, 2019)) +
+  coord_cartesian(ylim = c(-1.8,1.3)) +
   theme(panel.background = element_rect(fill = NA, color = NA),
         panel.grid.minor.y = element_line(color = "grey95"),
         panel.grid.major.y = element_line(color = "grey95"),
@@ -916,9 +961,9 @@ fit_survival %>%
         axis.title = element_text(face = "bold", size = 8),
         legend.title = element_text(face = "bold", size = 8),
         legend.text = element_text(size = 7),
-        legend.key.size = unit(0.3, "cm"),
+        legend.key.size = unit(0.4, "cm"),
         legend.key = element_blank())
-ggsave("Survival_Fixed_effects.png", width = 16, height = 8, units = "cm", dpi = 600)
+ggsave("Survival_Fixed_effects.png", width = 16, height = 7, units = "cm", dpi = 600)
 
 #-------------------------------------------------------------------------------
 # Interval-censored survival analysis - Visualizing the estimated survival curves
@@ -931,23 +976,19 @@ a <- fit_survival %>%
   ggplot() +
   stat_lineribbon(aes(x = days, y = S_averaged, color = factor(level), fill = factor(level)), alpha = 1/5, .width = c(0.5, 0.8, 0.95), size = 0.5) +
   stat_lineribbon(aes(x = days, y = S_averaged, color = factor(level), fill = factor(level)), .width = NA, size = 0.5) +
-  scale_color_manual(values = c("#8cad11","#f55600"), labels = c("Early <i>Daphnia</i>", "Late <i>Daphnia</i>"),
+  scale_color_manual(values = c("#0090C8", "#CE178C"), labels = c("Late <i>Daphnia</i>", "Early <i>Daphnia</i>"),
                      guide = guide_legend(override.aes = list(linetype = "solid", alpha = 1, fill = NA))) +
-  scale_fill_manual(values = c("#8cad11","#f55600"), labels = c("Early <i>Daphnia</i>", "Late <i>Daphnia</i>")) +
+  scale_fill_manual(values = c("#0090C8", "#CE178C"), labels = c("Late <i>Daphnia</i>", "Early <i>Daphnia</i>")) +
   scale_x_continuous("", breaks = seq(0, 72, by = 4), expand = c(0,0)) +
   scale_y_continuous("Survival probability", breaks = seq(0, 1, by = 0.2), expand = c(0,0), limits = c(0,1)) +
   coord_cartesian(xlim = c(0, 24)) +
   theme(panel.background = element_blank(),
         panel.grid = element_line(color = "grey95", size = 0.3),
         panel.grid.minor = element_blank(),
-        panel.spacing.x = unit(1, "lines"),
-        plot.title = element_text(face = "bold", size = 9, hjust = 0),
-        strip.text.x = element_markdown(size = 9, face = "bold"),
-        strip.background = element_blank(),
         axis.line.x = element_line(colour = "black", size = 0.3),
-        axis.title = element_text(size = 9, face = "bold"),
-        axis.text.x = element_markdown(size = 9),
-        axis.text.y = element_text(size = 9),
+        axis.title = element_text(size = 8, face = "bold"),
+        axis.text.x = element_markdown(size = 7),
+        axis.text.y = element_text(size = 7),
         axis.ticks = element_line(size = 0.4),
         legend.background = element_blank(),
         legend.position = c(1,1),
@@ -957,7 +998,7 @@ a <- fit_survival %>%
         legend.key.height = unit(5, "mm"),
         legend.spacing.y = unit(0.5, "mm"),
         legend.title = element_blank(),
-        legend.text = element_markdown(size = 9))
+        legend.text = element_markdown(size = 7))
 b <- fit_survival %>%
   spread_draws(S_averaged[treatment, level, time]) %>%
   filter(treatment == 2) %>%
@@ -965,25 +1006,20 @@ b <- fit_survival %>%
   ggplot() +
   stat_lineribbon(aes(x = days, y = S_averaged, color = factor(level), fill = factor(level)), alpha = 1/5, .width = c(0.5, 0.8, 0.95), size = 0.5) +
   stat_lineribbon(aes(x = days, y = S_averaged, color = factor(level), fill = factor(level)), .width = NA, size = 0.5) +
-  scale_color_manual(values = c("#8cad11","#f55600"), labels = c("Early <i>Microcystis</i>", "Late <i>Microcystis</i>"),
+  scale_color_manual(values = c("#0090C8", "#CE178C"), labels = c("Late <i>Microcystis</i>", "Early <i>Microcystis</i>"),
                      guide = guide_legend(override.aes = list(linetype = "solid", alpha = 1, fill = NA))) +
-  scale_fill_manual(values = c("#8cad11","#f55600"), labels = c("Early <i>Microcystis</i>", "Late <i>Microcystis</i>")) +
+  scale_fill_manual(values = c("#0090C8", "#CE178C"), labels = c("Late <i>Microcystis</i>", "Early <i>Microcystis</i>")) +
   scale_x_continuous("Days", breaks = seq(0, 72, by = 4), expand = c(0,0)) +
   scale_y_continuous("", breaks = seq(0, 1, by = 0.2), expand = c(0,0), limits = c(0,1)) +
   coord_cartesian(xlim = c(0, 24)) +
   theme(panel.background = element_blank(),
         panel.grid = element_line(color = "grey95", size = 0.3),
         panel.grid.minor = element_blank(),
-        panel.spacing.x = unit(1, "lines"),
-        plot.title = element_text(face = "bold", size = 9, hjust = 0),
-        strip.text.x = element_markdown(size = 9, face = "bold"),
-        strip.background = element_blank(),
         axis.line.x = element_line(colour = "black", size = 0.3),
-        axis.title = element_text(size = 9, face = "bold"),
-        axis.text.x = element_markdown(size = 9),
-        axis.text.y = element_blank(),
-        axis.ticks.y = element_blank(),
-        axis.ticks.x = element_line(size = 0.4),
+        axis.title = element_text(size = 8, face = "bold"),
+        axis.text.x = element_markdown(size = 7),
+        axis.text.y = element_text(size = 7),
+        axis.ticks = element_line(size = 0.4),
         legend.background = element_blank(),
         legend.position = c(1,1),
         legend.justification = c(1,1),
@@ -992,7 +1028,7 @@ b <- fit_survival %>%
         legend.key.height = unit(5, "mm"),
         legend.spacing.y = unit(0.5, "mm"),
         legend.title = element_blank(),
-        legend.text = element_markdown(size = 9))
+        legend.text = element_markdown(size = 7))
 c <- fit_survival %>%
   spread_draws(S_averaged[treatment, level, time]) %>%
   filter(treatment == 3) %>%
@@ -1000,25 +1036,20 @@ c <- fit_survival %>%
   ggplot() +
   stat_lineribbon(aes(x = days, y = S_averaged, color = factor(level), fill = factor(level)), alpha = 1/5, .width = c(0.5, 0.8, 0.95), size = 0.5) +
   stat_lineribbon(aes(x = days, y = S_averaged, color = factor(level), fill = factor(level)), .width = NA, size = 0.5) +
-  scale_color_manual(values = c("#8cad11","#f55600"), labels = c("Allotemporal", "Contemporal"),
+  scale_color_manual(values = c("#0090C8", "#CE178C"), labels = c("Contemporal", "Allotemporal"),
                      guide = guide_legend(override.aes = list(linetype = "solid", alpha = 1, fill = NA))) +
-  scale_fill_manual(values = c("#8cad11","#f55600"), labels = c("Allotemporal", "Contemporal")) +
+  scale_fill_manual(values = c("#0090C8", "#CE178C"), labels = c("Contemporal", "Allotemporal")) +
   scale_x_continuous("", breaks = seq(0, 72, by = 4), expand = c(0,0)) +
   scale_y_continuous("", breaks = seq(0, 1, by = 0.2), expand = c(0,0), limits = c(0,1)) +
   coord_cartesian(xlim = c(0, 24)) +
   theme(panel.background = element_blank(),
         panel.grid = element_line(color = "grey95", size = 0.3),
         panel.grid.minor = element_blank(),
-        panel.spacing.x = unit(1, "lines"),
-        plot.title = element_text(face = "bold", size = 9, hjust = 0),
-        strip.text.x = element_markdown(size = 9, face = "bold"),
-        strip.background = element_blank(),
         axis.line.x = element_line(colour = "black", size = 0.3),
-        axis.title = element_text(size = 9, face = "bold"),
-        axis.text.x = element_markdown(size = 9),
-        axis.text.y = element_blank(),
-        axis.ticks.x = element_line(size = 0.4),
-        axis.ticks.y = element_blank(),
+        axis.title = element_text(size = 8, face = "bold"),
+        axis.text.x = element_markdown(size = 7),
+        axis.text.y = element_text(size = 7),
+        axis.ticks = element_line(size = 0.4),
         legend.background = element_blank(),
         legend.position = c(1,1),
         legend.justification = c(1,1),
@@ -1027,6 +1058,6 @@ c <- fit_survival %>%
         legend.key.height = unit(5, "mm"),
         legend.spacing.y = unit(0.5, "mm"),
         legend.title = element_blank(),
-        legend.text = element_markdown(size = 9))
+        legend.text = element_markdown(size = 7))
 a+b+c
-ggsave("Survival_Curves.png", width = 16, height = 7, units = "cm", dpi = 600)
+ggsave("Survival_Curves.png", width = 16, height = 6, units = "cm", dpi = 600)
