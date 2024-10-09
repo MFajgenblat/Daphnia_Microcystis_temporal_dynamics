@@ -1,1 +1,7 @@
 # Code and data for the statistical analysis in "Rapid temporal adaptation structures tolerance to toxic cyanobacteria in a natural population of the water flea Daphnia."
+
+This repository contains the code and data for the manuscript "Rapid temporal adaptation structures tolerance to toxic cyanobacteria in a natural population of the water flea Daphnia."
+
+The R-file "Main_analysis.R" constitutes the principal script for reading, processing visualizing and analyzing the data. The csv-file "summary_data.csv" contains the survival data for each of the time intervals summarized per experimental unit, and is read in the main script. The Stan-files "Binomial_GLMM.stan" and "Interval_censored_survival.stan" contain the probabilistic models used for the Bayesian analyes in the main script.
+
+The R-file "Seasonal_dynamics_visualization.R" constitutes a supplementary script for reading and visualizing temporal dynamics of phytoplankton and zooplankton in Langerodevijver from February to November 2019, based on the data in the csv-file "Seasonal_dynamics_data.csv".
