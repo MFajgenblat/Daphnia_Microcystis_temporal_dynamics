@@ -6,7 +6,7 @@ library(patchwork)
 library(ggtext)
 
 
-read.csv("LRV_data.csv") %>%
+read.csv("Seasonal_dynamics_data.csv") %>%
   filter(Group == "Phytoplankton") %>%
   ggplot(aes(x = seq(as.Date("2019-01-01"), as.Date("2019-12-31"), by = 1)[DOY], y = value)) +
   scale_x_date("Date", breaks = "1 month", date_labels = "%b %d", limits = as.Date(c("2019-02-28", "2019-11-18")), expand = c(0,0)) +
