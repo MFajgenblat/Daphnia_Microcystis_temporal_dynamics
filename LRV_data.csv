@@ -1,0 +1,995 @@
+"Year","Date","name","value","Group","DOY"
+2019,2019-03-22,"Chlorophyll a",158.51,"Phytoplankton",81
+2019,2019-03-22,"Phycocyanin",10.66,"Phytoplankton",81
+2019,2019-03-23,"Chlorophyll a",176.85,"Phytoplankton",82
+2019,2019-03-23,"Phycocyanin",11.75,"Phytoplankton",82
+2019,2019-03-24,"Chlorophyll a",188.87,"Phytoplankton",83
+2019,2019-03-24,"Phycocyanin",12.465,"Phytoplankton",83
+2019,2019-03-25,"Chlorophyll a",206.18,"Phytoplankton",84
+2019,2019-03-25,"Phycocyanin",12.49,"Phytoplankton",84
+2019,2019-03-26,"Chlorophyll a",224.13,"Phytoplankton",85
+2019,2019-03-26,"Phycocyanin",13.905,"Phytoplankton",85
+2019,2019-03-27,"Chlorophyll a",236.84,"Phytoplankton",86
+2019,2019-03-27,"Phycocyanin",14.39,"Phytoplankton",86
+2019,2019-03-28,"Chlorophyll a",210.555,"Phytoplankton",87
+2019,2019-03-28,"Phycocyanin",12.57,"Phytoplankton",87
+2019,2019-03-29,"Chlorophyll a",200.95,"Phytoplankton",88
+2019,2019-03-29,"Phycocyanin",12.185,"Phytoplankton",88
+2019,2019-03-30,"Chlorophyll a",206.87,"Phytoplankton",89
+2019,2019-03-30,"Phycocyanin",11.45,"Phytoplankton",89
+2019,2019-03-31,"Chlorophyll a",225.45,"Phytoplankton",90
+2019,2019-03-31,"Phycocyanin",11.545,"Phytoplankton",90
+2019,2019-04-01,"Chlorophyll a",216.43,"Phytoplankton",91
+2019,2019-04-01,"Phycocyanin",10.995,"Phytoplankton",91
+2019,2019-04-02,"Chlorophyll a",218.795,"Phytoplankton",92
+2019,2019-04-02,"Phycocyanin",10.54,"Phytoplankton",92
+2019,2019-04-03,"Chlorophyll a",230.97,"Phytoplankton",93
+2019,2019-04-03,"Phycocyanin",11.63,"Phytoplankton",93
+2019,2019-04-04,"Chlorophyll a",244.18,"Phytoplankton",94
+2019,2019-04-04,"Phycocyanin",12.575,"Phytoplankton",94
+2019,2019-04-05,"Chlorophyll a",223.24,"Phytoplankton",95
+2019,2019-04-05,"Phycocyanin",11.92,"Phytoplankton",95
+2019,2019-04-06,"Chlorophyll a",213.745,"Phytoplankton",96
+2019,2019-04-06,"Phycocyanin",11.315,"Phytoplankton",96
+2019,2019-04-07,"Chlorophyll a",177.695,"Phytoplankton",97
+2019,2019-04-07,"Phycocyanin",9.455,"Phytoplankton",97
+2019,2019-04-08,"Chlorophyll a",148.13,"Phytoplankton",98
+2019,2019-04-08,"Phycocyanin",8.825,"Phytoplankton",98
+2019,2019-04-09,"Chlorophyll a",115.88,"Phytoplankton",99
+2019,2019-04-09,"Phycocyanin",9.455,"Phytoplankton",99
+2019,2019-04-10,"Chlorophyll a",84.18,"Phytoplankton",100
+2019,2019-04-10,"Phycocyanin",8.525,"Phytoplankton",100
+2019,2019-04-11,"Chlorophyll a",58.415,"Phytoplankton",101
+2019,2019-04-11,"Phycocyanin",6.26,"Phytoplankton",101
+2019,2019-04-12,"Chlorophyll a",57.22,"Phytoplankton",102
+2019,2019-04-12,"Phycocyanin",5.89,"Phytoplankton",102
+2019,2019-04-13,"Chlorophyll a",47.87,"Phytoplankton",103
+2019,2019-04-13,"Phycocyanin",4.85,"Phytoplankton",103
+2019,2019-04-14,"Chlorophyll a",42.115,"Phytoplankton",104
+2019,2019-04-14,"Phycocyanin",4.17,"Phytoplankton",104
+2019,2019-04-15,"Chlorophyll a",29.235,"Phytoplankton",105
+2019,2019-04-15,"Phycocyanin",3.06,"Phytoplankton",105
+2019,2019-04-16,"Chlorophyll a",20.79,"Phytoplankton",106
+2019,2019-04-16,"Phycocyanin",2.39,"Phytoplankton",106
+2019,2019-04-17,"Chlorophyll a",12.295,"Phytoplankton",107
+2019,2019-04-17,"Phycocyanin",1.77,"Phytoplankton",107
+2019,2019-04-18,"Chlorophyll a",5.39,"Phytoplankton",108
+2019,2019-04-18,"Phycocyanin",1.035,"Phytoplankton",108
+2019,2019-04-19,"Chlorophyll a",3.64,"Phytoplankton",109
+2019,2019-04-19,"Phycocyanin",0.73,"Phytoplankton",109
+2019,2019-04-20,"Chlorophyll a",2.975,"Phytoplankton",110
+2019,2019-04-20,"Phycocyanin",0.61,"Phytoplankton",110
+2019,2019-04-21,"Chlorophyll a",2.99,"Phytoplankton",111
+2019,2019-04-21,"Phycocyanin",0.605,"Phytoplankton",111
+2019,2019-04-22,"Chlorophyll a",3.13,"Phytoplankton",112
+2019,2019-04-22,"Phycocyanin",0.57,"Phytoplankton",112
+2019,2019-04-23,"Chlorophyll a",3.52,"Phytoplankton",113
+2019,2019-04-23,"Phycocyanin",0.605,"Phytoplankton",113
+2019,2019-04-24,"Chlorophyll a",3.36,"Phytoplankton",114
+2019,2019-04-24,"Phycocyanin",0.63,"Phytoplankton",114
+2019,2019-04-25,"Chlorophyll a",3.75,"Phytoplankton",115
+2019,2019-04-25,"Phycocyanin",0.74,"Phytoplankton",115
+2019,2019-04-26,"Chlorophyll a",4.06,"Phytoplankton",116
+2019,2019-04-26,"Phycocyanin",0.765,"Phytoplankton",116
+2019,2019-04-27,"Chlorophyll a",4.615,"Phytoplankton",117
+2019,2019-04-27,"Phycocyanin",0.83,"Phytoplankton",117
+2019,2019-04-28,"Chlorophyll a",5.05,"Phytoplankton",118
+2019,2019-04-28,"Phycocyanin",0.93,"Phytoplankton",118
+2019,2019-04-29,"Chlorophyll a",5.385,"Phytoplankton",119
+2019,2019-04-29,"Phycocyanin",0.935,"Phytoplankton",119
+2019,2019-04-30,"Chlorophyll a",5.065,"Phytoplankton",120
+2019,2019-04-30,"Phycocyanin",0.83,"Phytoplankton",120
+2019,2019-05-01,"Chlorophyll a",5.865,"Phytoplankton",121
+2019,2019-05-01,"Phycocyanin",0.89,"Phytoplankton",121
+2019,2019-05-02,"Chlorophyll a",5.09,"Phytoplankton",122
+2019,2019-05-02,"Phycocyanin",0.89,"Phytoplankton",122
+2019,2019-05-03,"Chlorophyll a",5.67,"Phytoplankton",123
+2019,2019-05-03,"Phycocyanin",1.05,"Phytoplankton",123
+2019,2019-05-04,"Chlorophyll a",4.28,"Phytoplankton",124
+2019,2019-05-04,"Phycocyanin",0.94,"Phytoplankton",124
+2019,2019-05-05,"Chlorophyll a",4.67,"Phytoplankton",125
+2019,2019-05-05,"Phycocyanin",1.065,"Phytoplankton",125
+2019,2019-05-06,"Chlorophyll a",5.54,"Phytoplankton",126
+2019,2019-05-06,"Phycocyanin",1.17,"Phytoplankton",126
+2019,2019-05-07,"Chlorophyll a",6.22,"Phytoplankton",127
+2019,2019-05-07,"Phycocyanin",1.255,"Phytoplankton",127
+2019,2019-05-08,"Chlorophyll a",5.09,"Phytoplankton",128
+2019,2019-05-08,"Phycocyanin",1.13,"Phytoplankton",128
+2019,2019-05-09,"Chlorophyll a",4.08,"Phytoplankton",129
+2019,2019-05-09,"Phycocyanin",0.975,"Phytoplankton",129
+2019,2019-05-10,"Chlorophyll a",4.44,"Phytoplankton",130
+2019,2019-05-10,"Phycocyanin",0.91,"Phytoplankton",130
+2019,2019-05-11,"Chlorophyll a",4.705,"Phytoplankton",131
+2019,2019-05-11,"Phycocyanin",0.87,"Phytoplankton",131
+2019,2019-05-12,"Chlorophyll a",5.165,"Phytoplankton",132
+2019,2019-05-12,"Phycocyanin",0.905,"Phytoplankton",132
+2019,2019-05-13,"Chlorophyll a",4.76,"Phytoplankton",133
+2019,2019-05-13,"Phycocyanin",0.87,"Phytoplankton",133
+2019,2019-05-14,"Chlorophyll a",4.31,"Phytoplankton",134
+2019,2019-05-14,"Phycocyanin",0.805,"Phytoplankton",134
+2019,2019-05-15,"Chlorophyll a",3.88,"Phytoplankton",135
+2019,2019-05-15,"Phycocyanin",0.71,"Phytoplankton",135
+2019,2019-05-16,"Chlorophyll a",3.86,"Phytoplankton",136
+2019,2019-05-16,"Phycocyanin",0.745,"Phytoplankton",136
+2019,2019-05-17,"Chlorophyll a",4.08,"Phytoplankton",137
+2019,2019-05-17,"Phycocyanin",0.905,"Phytoplankton",137
+2019,2019-05-18,"Chlorophyll a",3.93,"Phytoplankton",138
+2019,2019-05-18,"Phycocyanin",0.77,"Phytoplankton",138
+2019,2019-05-19,"Chlorophyll a",3.3,"Phytoplankton",139
+2019,2019-05-19,"Phycocyanin",0.65,"Phytoplankton",139
+2019,2019-05-20,"Chlorophyll a",3.67,"Phytoplankton",140
+2019,2019-05-20,"Phycocyanin",0.775,"Phytoplankton",140
+2019,2019-05-21,"Chlorophyll a",3.54,"Phytoplankton",141
+2019,2019-05-21,"Phycocyanin",0.705,"Phytoplankton",141
+2019,2019-05-22,"Chlorophyll a",3.44,"Phytoplankton",142
+2019,2019-05-22,"Phycocyanin",0.62,"Phytoplankton",142
+2019,2019-05-23,"Chlorophyll a",3.455,"Phytoplankton",143
+2019,2019-05-23,"Phycocyanin",0.59,"Phytoplankton",143
+2019,2019-05-24,"Chlorophyll a",3.29,"Phytoplankton",144
+2019,2019-05-24,"Phycocyanin",0.515,"Phytoplankton",144
+2019,2019-05-25,"Chlorophyll a",3.84,"Phytoplankton",145
+2019,2019-05-25,"Phycocyanin",0.65,"Phytoplankton",145
+2019,2019-05-26,"Chlorophyll a",3.95,"Phytoplankton",146
+2019,2019-05-26,"Phycocyanin",0.69,"Phytoplankton",146
+2019,2019-05-27,"Chlorophyll a",4.1,"Phytoplankton",147
+2019,2019-05-27,"Phycocyanin",0.71,"Phytoplankton",147
+2019,2019-05-28,"Chlorophyll a",5.005,"Phytoplankton",148
+2019,2019-05-28,"Phycocyanin",0.89,"Phytoplankton",148
+2019,2019-05-29,"Chlorophyll a",4.09,"Phytoplankton",149
+2019,2019-05-29,"Phycocyanin",0.7,"Phytoplankton",149
+2019,2019-05-30,"Chlorophyll a",4.595,"Phytoplankton",150
+2019,2019-05-30,"Phycocyanin",0.78,"Phytoplankton",150
+2019,2019-05-31,"Chlorophyll a",4.73,"Phytoplankton",151
+2019,2019-05-31,"Phycocyanin",0.82,"Phytoplankton",151
+2019,2019-06-01,"Chlorophyll a",4.54,"Phytoplankton",152
+2019,2019-06-01,"Phycocyanin",0.78,"Phytoplankton",152
+2019,2019-06-02,"Chlorophyll a",3.77,"Phytoplankton",153
+2019,2019-06-02,"Phycocyanin",0.63,"Phytoplankton",153
+2019,2019-06-03,"Chlorophyll a",4.095,"Phytoplankton",154
+2019,2019-06-03,"Phycocyanin",0.705,"Phytoplankton",154
+2019,2019-06-04,"Chlorophyll a",4.445,"Phytoplankton",155
+2019,2019-06-04,"Phycocyanin",0.73,"Phytoplankton",155
+2019,2019-06-05,"Chlorophyll a",5.665,"Phytoplankton",156
+2019,2019-06-05,"Phycocyanin",0.87,"Phytoplankton",156
+2019,2019-06-06,"Chlorophyll a",6.375,"Phytoplankton",157
+2019,2019-06-06,"Phycocyanin",1.06,"Phytoplankton",157
+2019,2019-06-07,"Chlorophyll a",5.31,"Phytoplankton",158
+2019,2019-06-07,"Phycocyanin",0.84,"Phytoplankton",158
+2019,2019-06-08,"Chlorophyll a",7.23,"Phytoplankton",159
+2019,2019-06-08,"Phycocyanin",1.23,"Phytoplankton",159
+2019,2019-06-09,"Chlorophyll a",7.68,"Phytoplankton",160
+2019,2019-06-09,"Phycocyanin",1.17,"Phytoplankton",160
+2019,2019-06-10,"Chlorophyll a",8.45,"Phytoplankton",161
+2019,2019-06-10,"Phycocyanin",1.22,"Phytoplankton",161
+2019,2019-06-11,"Chlorophyll a",8.28,"Phytoplankton",162
+2019,2019-06-11,"Phycocyanin",1.1,"Phytoplankton",162
+2019,2019-06-12,"Chlorophyll a",8.75,"Phytoplankton",163
+2019,2019-06-12,"Phycocyanin",1.205,"Phytoplankton",163
+2019,2019-06-13,"Chlorophyll a",6.63,"Phytoplankton",164
+2019,2019-06-13,"Phycocyanin",1.015,"Phytoplankton",164
+2019,2019-06-14,"Chlorophyll a",8.21,"Phytoplankton",165
+2019,2019-06-14,"Phycocyanin",1.175,"Phytoplankton",165
+2019,2019-06-15,"Chlorophyll a",6.63,"Phytoplankton",166
+2019,2019-06-15,"Phycocyanin",0.925,"Phytoplankton",166
+2019,2019-06-16,"Chlorophyll a",8.035,"Phytoplankton",167
+2019,2019-06-16,"Phycocyanin",1.135,"Phytoplankton",167
+2019,2019-06-17,"Chlorophyll a",7.525,"Phytoplankton",168
+2019,2019-06-17,"Phycocyanin",1,"Phytoplankton",168
+2019,2019-06-18,"Chlorophyll a",9.71,"Phytoplankton",169
+2019,2019-06-18,"Phycocyanin",1.22,"Phytoplankton",169
+2019,2019-06-19,"Chlorophyll a",11.715,"Phytoplankton",170
+2019,2019-06-19,"Phycocyanin",1.335,"Phytoplankton",170
+2019,2019-06-20,"Chlorophyll a",11.19,"Phytoplankton",171
+2019,2019-06-20,"Phycocyanin",1.29,"Phytoplankton",171
+2019,2019-06-21,"Chlorophyll a",12.055,"Phytoplankton",172
+2019,2019-06-21,"Phycocyanin",1.505,"Phytoplankton",172
+2019,2019-06-22,"Chlorophyll a",15.96,"Phytoplankton",173
+2019,2019-06-22,"Phycocyanin",1.79,"Phytoplankton",173
+2019,2019-06-23,"Chlorophyll a",21.47,"Phytoplankton",174
+2019,2019-06-23,"Phycocyanin",2.1,"Phytoplankton",174
+2019,2019-06-24,"Chlorophyll a",28.385,"Phytoplankton",175
+2019,2019-06-24,"Phycocyanin",2.8,"Phytoplankton",175
+2019,2019-06-25,"Chlorophyll a",31.775,"Phytoplankton",176
+2019,2019-06-25,"Phycocyanin",3.4,"Phytoplankton",176
+2019,2019-06-26,"Chlorophyll a",28.205,"Phytoplankton",177
+2019,2019-06-26,"Phycocyanin",3.48,"Phytoplankton",177
+2019,2019-06-27,"Chlorophyll a",43.07,"Phytoplankton",178
+2019,2019-06-27,"Phycocyanin",5.23,"Phytoplankton",178
+2019,2019-06-28,"Chlorophyll a",40.965,"Phytoplankton",179
+2019,2019-06-28,"Phycocyanin",4.74,"Phytoplankton",179
+2019,2019-06-29,"Chlorophyll a",36.095,"Phytoplankton",180
+2019,2019-06-29,"Phycocyanin",4.08,"Phytoplankton",180
+2019,2019-06-30,"Chlorophyll a",32.12,"Phytoplankton",181
+2019,2019-06-30,"Phycocyanin",3.255,"Phytoplankton",181
+2019,2019-07-01,"Chlorophyll a",36.23,"Phytoplankton",182
+2019,2019-07-01,"Phycocyanin",3.415,"Phytoplankton",182
+2019,2019-07-02,"Chlorophyll a",62.425,"Phytoplankton",183
+2019,2019-07-02,"Phycocyanin",5.1,"Phytoplankton",183
+2019,2019-07-03,"Chlorophyll a",87.73,"Phytoplankton",184
+2019,2019-07-03,"Phycocyanin",6.81,"Phytoplankton",184
+2019,2019-07-04,"Chlorophyll a",99.18,"Phytoplankton",185
+2019,2019-07-04,"Phycocyanin",7.93,"Phytoplankton",185
+2019,2019-07-05,"Chlorophyll a",94.16,"Phytoplankton",186
+2019,2019-07-05,"Phycocyanin",7.445,"Phytoplankton",186
+2019,2019-07-06,"Chlorophyll a",92.27,"Phytoplankton",187
+2019,2019-07-06,"Phycocyanin",8.06,"Phytoplankton",187
+2019,2019-07-07,"Chlorophyll a",90.53,"Phytoplankton",188
+2019,2019-07-07,"Phycocyanin",8.825,"Phytoplankton",188
+2019,2019-07-08,"Chlorophyll a",99.15,"Phytoplankton",189
+2019,2019-07-08,"Phycocyanin",10.045,"Phytoplankton",189
+2019,2019-07-09,"Chlorophyll a",98.6,"Phytoplankton",190
+2019,2019-07-09,"Phycocyanin",11.495,"Phytoplankton",190
+2019,2019-07-10,"Chlorophyll a",96.7,"Phytoplankton",191
+2019,2019-07-10,"Phycocyanin",12.71,"Phytoplankton",191
+2019,2019-07-11,"Chlorophyll a",81.52,"Phytoplankton",192
+2019,2019-07-11,"Phycocyanin",12.975,"Phytoplankton",192
+2019,2019-07-12,"Chlorophyll a",82.36,"Phytoplankton",193
+2019,2019-07-12,"Phycocyanin",14.705,"Phytoplankton",193
+2019,2019-07-13,"Chlorophyll a",81.675,"Phytoplankton",194
+2019,2019-07-13,"Phycocyanin",17.13,"Phytoplankton",194
+2019,2019-07-14,"Chlorophyll a",79.29,"Phytoplankton",195
+2019,2019-07-14,"Phycocyanin",17.65,"Phytoplankton",195
+2019,2019-07-15,"Chlorophyll a",80.81,"Phytoplankton",196
+2019,2019-07-15,"Phycocyanin",19.73,"Phytoplankton",196
+2019,2019-07-16,"Chlorophyll a",84.87,"Phytoplankton",197
+2019,2019-07-16,"Phycocyanin",22.63,"Phytoplankton",197
+2019,2019-07-17,"Chlorophyll a",77.98,"Phytoplankton",198
+2019,2019-07-17,"Phycocyanin",23.99,"Phytoplankton",198
+2019,2019-07-18,"Chlorophyll a",65.515,"Phytoplankton",199
+2019,2019-07-18,"Phycocyanin",21.05,"Phytoplankton",199
+2019,2019-07-19,"Chlorophyll a",54.77,"Phytoplankton",200
+2019,2019-07-19,"Phycocyanin",21.89,"Phytoplankton",200
+2019,2019-07-20,"Chlorophyll a",53.49,"Phytoplankton",201
+2019,2019-07-20,"Phycocyanin",21.685,"Phytoplankton",201
+2019,2019-07-21,"Chlorophyll a",62.385,"Phytoplankton",202
+2019,2019-07-21,"Phycocyanin",22.57,"Phytoplankton",202
+2019,2019-07-22,"Chlorophyll a",64.04,"Phytoplankton",203
+2019,2019-07-22,"Phycocyanin",24.13,"Phytoplankton",203
+2019,2019-07-23,"Chlorophyll a",59.84,"Phytoplankton",204
+2019,2019-07-23,"Phycocyanin",28.61,"Phytoplankton",204
+2019,2019-07-24,"Chlorophyll a",55,"Phytoplankton",205
+2019,2019-07-24,"Phycocyanin",31.64,"Phytoplankton",205
+2019,2019-07-25,"Chlorophyll a",48.9,"Phytoplankton",206
+2019,2019-07-25,"Phycocyanin",35.03,"Phytoplankton",206
+2019,2019-07-26,"Chlorophyll a",46.775,"Phytoplankton",207
+2019,2019-07-26,"Phycocyanin",37.655,"Phytoplankton",207
+2019,2019-07-27,"Chlorophyll a",57.11,"Phytoplankton",208
+2019,2019-07-27,"Phycocyanin",39.605,"Phytoplankton",208
+2019,2019-07-28,"Chlorophyll a",59.54,"Phytoplankton",209
+2019,2019-07-28,"Phycocyanin",37.44,"Phytoplankton",209
+2019,2019-07-29,"Chlorophyll a",50.015,"Phytoplankton",210
+2019,2019-07-29,"Phycocyanin",37.95,"Phytoplankton",210
+2019,2019-07-30,"Chlorophyll a",44.675,"Phytoplankton",211
+2019,2019-07-30,"Phycocyanin",36.565,"Phytoplankton",211
+2019,2019-07-31,"Chlorophyll a",50,"Phytoplankton",212
+2019,2019-07-31,"Phycocyanin",32.48,"Phytoplankton",212
+2019,2019-08-01,"Chlorophyll a",49.085,"Phytoplankton",213
+2019,2019-08-01,"Phycocyanin",28.705,"Phytoplankton",213
+2019,2019-08-02,"Chlorophyll a",52.415,"Phytoplankton",214
+2019,2019-08-02,"Phycocyanin",28.645,"Phytoplankton",214
+2019,2019-08-03,"Chlorophyll a",59.615,"Phytoplankton",215
+2019,2019-08-03,"Phycocyanin",32.3,"Phytoplankton",215
+2019,2019-08-04,"Chlorophyll a",53.555,"Phytoplankton",216
+2019,2019-08-04,"Phycocyanin",36.365,"Phytoplankton",216
+2019,2019-08-05,"Chlorophyll a",53.39,"Phytoplankton",217
+2019,2019-08-05,"Phycocyanin",31.02,"Phytoplankton",217
+2019,2019-08-06,"Chlorophyll a",55.105,"Phytoplankton",218
+2019,2019-08-06,"Phycocyanin",29.23,"Phytoplankton",218
+2019,2019-08-07,"Chlorophyll a",64.055,"Phytoplankton",219
+2019,2019-08-07,"Phycocyanin",32.975,"Phytoplankton",219
+2019,2019-08-08,"Chlorophyll a",66.41,"Phytoplankton",220
+2019,2019-08-08,"Phycocyanin",35.935,"Phytoplankton",220
+2019,2019-08-09,"Chlorophyll a",61.495,"Phytoplankton",221
+2019,2019-08-09,"Phycocyanin",37.645,"Phytoplankton",221
+2019,2019-08-10,"Chlorophyll a",72.47,"Phytoplankton",222
+2019,2019-08-10,"Phycocyanin",41.61,"Phytoplankton",222
+2019,2019-08-11,"Chlorophyll a",65.455,"Phytoplankton",223
+2019,2019-08-11,"Phycocyanin",46.785,"Phytoplankton",223
+2019,2019-08-12,"Chlorophyll a",61.855,"Phytoplankton",224
+2019,2019-08-12,"Phycocyanin",47.77,"Phytoplankton",224
+2019,2019-08-13,"Chlorophyll a",67.68,"Phytoplankton",225
+2019,2019-08-13,"Phycocyanin",48.895,"Phytoplankton",225
+2019,2019-08-14,"Chlorophyll a",56.71,"Phytoplankton",226
+2019,2019-08-14,"Phycocyanin",49.055,"Phytoplankton",226
+2019,2019-08-15,"Chlorophyll a",61.025,"Phytoplankton",227
+2019,2019-08-15,"Phycocyanin",46.055,"Phytoplankton",227
+2019,2019-08-16,"Chlorophyll a",54.065,"Phytoplankton",228
+2019,2019-08-16,"Phycocyanin",46.06,"Phytoplankton",228
+2019,2019-08-17,"Chlorophyll a",56.505,"Phytoplankton",229
+2019,2019-08-17,"Phycocyanin",45.405,"Phytoplankton",229
+2019,2019-08-18,"Chlorophyll a",52.795,"Phytoplankton",230
+2019,2019-08-18,"Phycocyanin",48.005,"Phytoplankton",230
+2019,2019-08-19,"Chlorophyll a",51.175,"Phytoplankton",231
+2019,2019-08-19,"Phycocyanin",48.375,"Phytoplankton",231
+2019,2019-08-20,"Chlorophyll a",50.365,"Phytoplankton",232
+2019,2019-08-20,"Phycocyanin",48.54,"Phytoplankton",232
+2019,2019-08-21,"Chlorophyll a",47.345,"Phytoplankton",233
+2019,2019-08-21,"Phycocyanin",48.765,"Phytoplankton",233
+2019,2019-08-22,"Chlorophyll a",43.18,"Phytoplankton",234
+2019,2019-08-22,"Phycocyanin",41.715,"Phytoplankton",234
+2019,2019-08-23,"Chlorophyll a",42.17,"Phytoplankton",235
+2019,2019-08-23,"Phycocyanin",38.235,"Phytoplankton",235
+2019,2019-08-24,"Chlorophyll a",38.4,"Phytoplankton",236
+2019,2019-08-24,"Phycocyanin",36.395,"Phytoplankton",236
+2019,2019-08-25,"Chlorophyll a",38.41,"Phytoplankton",237
+2019,2019-08-25,"Phycocyanin",34.47,"Phytoplankton",237
+2019,2019-08-26,"Chlorophyll a",35.355,"Phytoplankton",238
+2019,2019-08-26,"Phycocyanin",30.07,"Phytoplankton",238
+2019,2019-08-27,"Chlorophyll a",36.57,"Phytoplankton",239
+2019,2019-08-27,"Phycocyanin",27.625,"Phytoplankton",239
+2019,2019-08-28,"Chlorophyll a",30.975,"Phytoplankton",240
+2019,2019-08-28,"Phycocyanin",18.245,"Phytoplankton",240
+2019,2019-08-29,"Chlorophyll a",31.265,"Phytoplankton",241
+2019,2019-08-29,"Phycocyanin",20.01,"Phytoplankton",241
+2019,2019-08-30,"Chlorophyll a",32.01,"Phytoplankton",242
+2019,2019-08-30,"Phycocyanin",24.72,"Phytoplankton",242
+2019,2019-08-31,"Chlorophyll a",28.53,"Phytoplankton",243
+2019,2019-08-31,"Phycocyanin",22.655,"Phytoplankton",243
+2019,2019-09-01,"Chlorophyll a",31.87,"Phytoplankton",244
+2019,2019-09-01,"Phycocyanin",23.72,"Phytoplankton",244
+2019,2019-09-02,"Chlorophyll a",34.305,"Phytoplankton",245
+2019,2019-09-02,"Phycocyanin",26.975,"Phytoplankton",245
+2019,2019-09-03,"Chlorophyll a",33.81,"Phytoplankton",246
+2019,2019-09-03,"Phycocyanin",25.035,"Phytoplankton",246
+2019,2019-09-04,"Chlorophyll a",36.07,"Phytoplankton",247
+2019,2019-09-04,"Phycocyanin",27.3,"Phytoplankton",247
+2019,2019-09-05,"Chlorophyll a",37.19,"Phytoplankton",248
+2019,2019-09-05,"Phycocyanin",29.005,"Phytoplankton",248
+2019,2019-09-06,"Chlorophyll a",35.095,"Phytoplankton",249
+2019,2019-09-06,"Phycocyanin",31.675,"Phytoplankton",249
+2019,2019-09-07,"Chlorophyll a",35.745,"Phytoplankton",250
+2019,2019-09-07,"Phycocyanin",29.455,"Phytoplankton",250
+2019,2019-09-08,"Chlorophyll a",33.295,"Phytoplankton",251
+2019,2019-09-08,"Phycocyanin",29.265,"Phytoplankton",251
+2019,2019-09-09,"Chlorophyll a",33.61,"Phytoplankton",252
+2019,2019-09-09,"Phycocyanin",27.505,"Phytoplankton",252
+2019,2019-09-10,"Chlorophyll a",31.375,"Phytoplankton",253
+2019,2019-09-10,"Phycocyanin",26.955,"Phytoplankton",253
+2019,2019-09-11,"Chlorophyll a",32.385,"Phytoplankton",254
+2019,2019-09-11,"Phycocyanin",23.33,"Phytoplankton",254
+2019,2019-09-12,"Chlorophyll a",34.185,"Phytoplankton",255
+2019,2019-09-12,"Phycocyanin",24.44,"Phytoplankton",255
+2019,2019-09-13,"Chlorophyll a",32.125,"Phytoplankton",256
+2019,2019-09-13,"Phycocyanin",23.83,"Phytoplankton",256
+2019,2019-09-14,"Chlorophyll a",34.575,"Phytoplankton",257
+2019,2019-09-14,"Phycocyanin",26.995,"Phytoplankton",257
+2019,2019-09-15,"Chlorophyll a",31.78,"Phytoplankton",258
+2019,2019-09-15,"Phycocyanin",24.395,"Phytoplankton",258
+2019,2019-09-16,"Chlorophyll a",33.38,"Phytoplankton",259
+2019,2019-09-16,"Phycocyanin",23.555,"Phytoplankton",259
+2019,2019-09-17,"Chlorophyll a",33.765,"Phytoplankton",260
+2019,2019-09-17,"Phycocyanin",26.97,"Phytoplankton",260
+2019,2019-09-18,"Chlorophyll a",36.585,"Phytoplankton",261
+2019,2019-09-18,"Phycocyanin",30.165,"Phytoplankton",261
+2019,2019-09-19,"Chlorophyll a",32.805,"Phytoplankton",262
+2019,2019-09-19,"Phycocyanin",31.14,"Phytoplankton",262
+2019,2019-09-20,"Chlorophyll a",35.17,"Phytoplankton",263
+2019,2019-09-20,"Phycocyanin",30.25,"Phytoplankton",263
+2019,2019-09-21,"Chlorophyll a",31.03,"Phytoplankton",264
+2019,2019-09-21,"Phycocyanin",30.59,"Phytoplankton",264
+2019,2019-09-22,"Chlorophyll a",33.95,"Phytoplankton",265
+2019,2019-09-22,"Phycocyanin",27.225,"Phytoplankton",265
+2019,2019-09-23,"Chlorophyll a",34.755,"Phytoplankton",266
+2019,2019-09-23,"Phycocyanin",27.98,"Phytoplankton",266
+2019,2019-09-24,"Chlorophyll a",37.04,"Phytoplankton",267
+2019,2019-09-24,"Phycocyanin",29.05,"Phytoplankton",267
+2019,2019-09-25,"Chlorophyll a",37.08,"Phytoplankton",268
+2019,2019-09-25,"Phycocyanin",30.58,"Phytoplankton",268
+2019,2019-09-26,"Chlorophyll a",37.21,"Phytoplankton",269
+2019,2019-09-26,"Phycocyanin",31.495,"Phytoplankton",269
+2019,2019-09-27,"Chlorophyll a",36.385,"Phytoplankton",270
+2019,2019-09-27,"Phycocyanin",31.99,"Phytoplankton",270
+2019,2019-09-28,"Chlorophyll a",37.07,"Phytoplankton",271
+2019,2019-09-28,"Phycocyanin",31.71,"Phytoplankton",271
+2019,2019-09-29,"Chlorophyll a",36.095,"Phytoplankton",272
+2019,2019-09-29,"Phycocyanin",29.135,"Phytoplankton",272
+2019,2019-09-30,"Chlorophyll a",37.98,"Phytoplankton",273
+2019,2019-09-30,"Phycocyanin",27.685,"Phytoplankton",273
+2019,2019-10-01,"Chlorophyll a",36.54,"Phytoplankton",274
+2019,2019-10-01,"Phycocyanin",25.22,"Phytoplankton",274
+2019,2019-10-02,"Chlorophyll a",37.485,"Phytoplankton",275
+2019,2019-10-02,"Phycocyanin",24.31,"Phytoplankton",275
+2019,2019-10-03,"Chlorophyll a",38.95,"Phytoplankton",276
+2019,2019-10-03,"Phycocyanin",24.8,"Phytoplankton",276
+2019,2019-10-04,"Chlorophyll a",41.84,"Phytoplankton",277
+2019,2019-10-04,"Phycocyanin",23.95,"Phytoplankton",277
+2019,2019-10-05,"Chlorophyll a",43.79,"Phytoplankton",278
+2019,2019-10-05,"Phycocyanin",24.75,"Phytoplankton",278
+2019,2019-10-06,"Chlorophyll a",40.545,"Phytoplankton",279
+2019,2019-10-06,"Phycocyanin",23.85,"Phytoplankton",279
+2019,2019-10-07,"Chlorophyll a",46.305,"Phytoplankton",280
+2019,2019-10-07,"Phycocyanin",23.825,"Phytoplankton",280
+2019,2019-10-08,"Chlorophyll a",47.475,"Phytoplankton",281
+2019,2019-10-08,"Phycocyanin",22.04,"Phytoplankton",281
+2019,2019-10-09,"Chlorophyll a",49.07,"Phytoplankton",282
+2019,2019-10-09,"Phycocyanin",21.945,"Phytoplankton",282
+2019,2019-10-10,"Chlorophyll a",54.62,"Phytoplankton",283
+2019,2019-10-10,"Phycocyanin",21.93,"Phytoplankton",283
+2019,2019-10-11,"Chlorophyll a",58.935,"Phytoplankton",284
+2019,2019-10-11,"Phycocyanin",21.73,"Phytoplankton",284
+2019,2019-10-12,"Chlorophyll a",63.19,"Phytoplankton",285
+2019,2019-10-12,"Phycocyanin",22.375,"Phytoplankton",285
+2019,2019-10-13,"Chlorophyll a",71.435,"Phytoplankton",286
+2019,2019-10-13,"Phycocyanin",22.51,"Phytoplankton",286
+2019,2019-10-14,"Chlorophyll a",73.83,"Phytoplankton",287
+2019,2019-10-14,"Phycocyanin",22.26,"Phytoplankton",287
+2019,2019-10-15,"Chlorophyll a",65.04,"Phytoplankton",288
+2019,2019-10-15,"Phycocyanin",21.46,"Phytoplankton",288
+2019,2019-10-16,"Chlorophyll a",55.03,"Phytoplankton",289
+2019,2019-10-16,"Phycocyanin",22.185,"Phytoplankton",289
+2019,2019-10-17,"Chlorophyll a",51.825,"Phytoplankton",290
+2019,2019-10-17,"Phycocyanin",22.295,"Phytoplankton",290
+2019,2019-10-18,"Chlorophyll a",50.415,"Phytoplankton",291
+2019,2019-10-18,"Phycocyanin",22.125,"Phytoplankton",291
+2019,2019-10-19,"Chlorophyll a",51.81,"Phytoplankton",292
+2019,2019-10-19,"Phycocyanin",22.525,"Phytoplankton",292
+2019,2019-10-20,"Chlorophyll a",59.805,"Phytoplankton",293
+2019,2019-10-20,"Phycocyanin",23.385,"Phytoplankton",293
+2019,2019-10-21,"Chlorophyll a",51.205,"Phytoplankton",294
+2019,2019-10-21,"Phycocyanin",19.285,"Phytoplankton",294
+2019,2019-10-22,"Chlorophyll a",52.98,"Phytoplankton",295
+2019,2019-10-22,"Phycocyanin",18.8,"Phytoplankton",295
+2019,2019-10-23,"Chlorophyll a",53.855,"Phytoplankton",296
+2019,2019-10-23,"Phycocyanin",17.795,"Phytoplankton",296
+2019,2019-10-24,"Chlorophyll a",52.55,"Phytoplankton",297
+2019,2019-10-24,"Phycocyanin",16.11,"Phytoplankton",297
+2019,2019-10-25,"Chlorophyll a",60.18,"Phytoplankton",298
+2019,2019-10-25,"Phycocyanin",16.005,"Phytoplankton",298
+2019,2019-10-26,"Chlorophyll a",61.665,"Phytoplankton",299
+2019,2019-10-26,"Phycocyanin",15.275,"Phytoplankton",299
+2019,2019-10-27,"Chlorophyll a",63.28,"Phytoplankton",300
+2019,2019-10-27,"Phycocyanin",15.14,"Phytoplankton",300
+2019,2019-10-28,"Chlorophyll a",69.04,"Phytoplankton",301
+2019,2019-10-28,"Phycocyanin",14.97,"Phytoplankton",301
+2019,2019-10-29,"Chlorophyll a",62.235,"Phytoplankton",302
+2019,2019-10-29,"Phycocyanin",13.5,"Phytoplankton",302
+2019,2019-10-30,"Chlorophyll a",64.86,"Phytoplankton",303
+2019,2019-10-30,"Phycocyanin",12.49,"Phytoplankton",303
+2019,2019-10-31,"Chlorophyll a",60.81,"Phytoplankton",304
+2019,2019-10-31,"Phycocyanin",10.71,"Phytoplankton",304
+2019,2019-11-01,"Chlorophyll a",58.955,"Phytoplankton",305
+2019,2019-11-01,"Phycocyanin",9.14,"Phytoplankton",305
+2019,2019-11-02,"Chlorophyll a",63.74,"Phytoplankton",306
+2019,2019-11-02,"Phycocyanin",8.23,"Phytoplankton",306
+2019,2019-11-03,"Chlorophyll a",73.29,"Phytoplankton",307
+2019,2019-11-03,"Phycocyanin",8.81,"Phytoplankton",307
+2019,2019-11-04,"Chlorophyll a",76.92,"Phytoplankton",308
+2019,2019-11-04,"Phycocyanin",8.62,"Phytoplankton",308
+2019,2019-11-05,"Chlorophyll a",82.535,"Phytoplankton",309
+2019,2019-11-05,"Phycocyanin",9.115,"Phytoplankton",309
+2019,2019-11-06,"Chlorophyll a",104.435,"Phytoplankton",310
+2019,2019-11-06,"Phycocyanin",11.655,"Phytoplankton",310
+2019,2019-11-07,"Chlorophyll a",98.09,"Phytoplankton",311
+2019,2019-11-07,"Phycocyanin",10.51,"Phytoplankton",311
+2019,2019-11-08,"Chlorophyll a",109.14,"Phytoplankton",312
+2019,2019-11-08,"Phycocyanin",11.95,"Phytoplankton",312
+2019,2019-11-09,"Chlorophyll a",126.78,"Phytoplankton",313
+2019,2019-11-09,"Phycocyanin",11.995,"Phytoplankton",313
+2019,2019-11-10,"Chlorophyll a",113.37,"Phytoplankton",314
+2019,2019-11-10,"Phycocyanin",11.935,"Phytoplankton",314
+2019,2019-11-11,"Chlorophyll a",122.065,"Phytoplankton",315
+2019,2019-11-11,"Phycocyanin",11.625,"Phytoplankton",315
+2019,2019-11-12,"Chlorophyll a",133.915,"Phytoplankton",316
+2019,2019-11-12,"Phycocyanin",11.98,"Phytoplankton",316
+2019,2019-11-13,"Chlorophyll a",145.815,"Phytoplankton",317
+2019,2019-11-13,"Phycocyanin",12.59,"Phytoplankton",317
+2019,2019-11-14,"Chlorophyll a",167.14,"Phytoplankton",318
+2019,2019-11-14,"Phycocyanin",14.805,"Phytoplankton",318
+2019,2019-11-15,"Chlorophyll a",165.285,"Phytoplankton",319
+2019,2019-11-15,"Phycocyanin",15.3,"Phytoplankton",319
+2019,2019-11-16,"Chlorophyll a",143.975,"Phytoplankton",320
+2019,2019-11-16,"Phycocyanin",14.66,"Phytoplankton",320
+2019,2019-11-17,"Chlorophyll a",123.655,"Phytoplankton",321
+2019,2019-11-17,"Phycocyanin",13.175,"Phytoplankton",321
+2019,2019-11-18,"Chlorophyll a",148.245,"Phytoplankton",322
+2019,2019-11-18,"Phycocyanin",14.72,"Phytoplankton",322
+2019,2019-02-28,"Cyclopoida sp.",139.025,"Copepoda spp.",59
+2019,2019-02-28,"Calanoida sp.",4.3,"Copepoda spp.",59
+2019,2019-02-28,"Ostracoda sp.",0,"Ostracoda sp.",59
+2019,2019-02-28,"Bosmina longirostris",0.125,"Cladocera spp. (other)",59
+2019,2019-02-28,"Ilyocryptus agilis",0.025,"Cladocera spp. (other)",59
+2019,2019-02-28,"Alona rectangula",0,"Cladocera spp. (other)",59
+2019,2019-02-28,"Daphnia galeata",0,"Daphnia spp.",59
+2019,2019-02-28,"Daphnia magna",0,"Daphnia spp.",59
+2019,2019-02-28,"Daphnia pulicaria",0,"Daphnia spp.",59
+2019,2019-02-28,"Macrothrix laticornis",0,"Cladocera spp. (other)",59
+2019,2019-02-28,"Chydorus sphaericus",0,"Cladocera spp. (other)",59
+2019,2019-02-28,"Simocephalus vetulus",0,"Cladocera spp. (other)",59
+2019,2019-02-28,"Leydigia quadrangularis",0,"Cladocera spp. (other)",59
+2019,2019-02-28,"Scapholeberis mucronata",0,"Cladocera spp. (other)",59
+2019,2019-02-28,"Pleuroxus uncinatus",0,"Cladocera spp. (other)",59
+2019,2019-03-06,"Cyclopoida sp.",8.725,"Copepoda spp.",65
+2019,2019-03-06,"Calanoida sp.",0.925,"Copepoda spp.",65
+2019,2019-03-06,"Ostracoda sp.",0.025,"Ostracoda sp.",65
+2019,2019-03-06,"Bosmina longirostris",0.025,"Cladocera spp. (other)",65
+2019,2019-03-06,"Ilyocryptus agilis",0.025,"Cladocera spp. (other)",65
+2019,2019-03-06,"Alona rectangula",0.025,"Cladocera spp. (other)",65
+2019,2019-03-06,"Daphnia galeata",0,"Daphnia spp.",65
+2019,2019-03-06,"Daphnia magna",0,"Daphnia spp.",65
+2019,2019-03-06,"Daphnia pulicaria",0,"Daphnia spp.",65
+2019,2019-03-06,"Macrothrix laticornis",0,"Cladocera spp. (other)",65
+2019,2019-03-06,"Chydorus sphaericus",0,"Cladocera spp. (other)",65
+2019,2019-03-06,"Simocephalus vetulus",0,"Cladocera spp. (other)",65
+2019,2019-03-06,"Leydigia quadrangularis",0,"Cladocera spp. (other)",65
+2019,2019-03-06,"Scapholeberis mucronata",0,"Cladocera spp. (other)",65
+2019,2019-03-06,"Pleuroxus uncinatus",0,"Cladocera spp. (other)",65
+2019,2019-03-13,"Cyclopoida sp.",3.725,"Copepoda spp.",72
+2019,2019-03-13,"Calanoida sp.",2.325,"Copepoda spp.",72
+2019,2019-03-13,"Ostracoda sp.",0,"Ostracoda sp.",72
+2019,2019-03-13,"Bosmina longirostris",0,"Cladocera spp. (other)",72
+2019,2019-03-13,"Ilyocryptus agilis",0.025,"Cladocera spp. (other)",72
+2019,2019-03-13,"Alona rectangula",0.025,"Cladocera spp. (other)",72
+2019,2019-03-13,"Daphnia galeata",0.025,"Daphnia spp.",72
+2019,2019-03-13,"Daphnia magna",0,"Daphnia spp.",72
+2019,2019-03-13,"Daphnia pulicaria",0,"Daphnia spp.",72
+2019,2019-03-13,"Macrothrix laticornis",0,"Cladocera spp. (other)",72
+2019,2019-03-13,"Chydorus sphaericus",0,"Cladocera spp. (other)",72
+2019,2019-03-13,"Simocephalus vetulus",0,"Cladocera spp. (other)",72
+2019,2019-03-13,"Leydigia quadrangularis",0,"Cladocera spp. (other)",72
+2019,2019-03-13,"Scapholeberis mucronata",0,"Cladocera spp. (other)",72
+2019,2019-03-13,"Pleuroxus uncinatus",0,"Cladocera spp. (other)",72
+2019,2019-03-21,"Cyclopoida sp.",14.625,"Copepoda spp.",80
+2019,2019-03-21,"Calanoida sp.",2.375,"Copepoda spp.",80
+2019,2019-03-21,"Ostracoda sp.",0,"Ostracoda sp.",80
+2019,2019-03-21,"Bosmina longirostris",0,"Cladocera spp. (other)",80
+2019,2019-03-21,"Ilyocryptus agilis",0.65,"Cladocera spp. (other)",80
+2019,2019-03-21,"Alona rectangula",0.125,"Cladocera spp. (other)",80
+2019,2019-03-21,"Daphnia galeata",0.475,"Daphnia spp.",80
+2019,2019-03-21,"Daphnia magna",0.025,"Daphnia spp.",80
+2019,2019-03-21,"Daphnia pulicaria",0.025,"Daphnia spp.",80
+2019,2019-03-21,"Macrothrix laticornis",0,"Cladocera spp. (other)",80
+2019,2019-03-21,"Chydorus sphaericus",0,"Cladocera spp. (other)",80
+2019,2019-03-21,"Simocephalus vetulus",0,"Cladocera spp. (other)",80
+2019,2019-03-21,"Leydigia quadrangularis",0,"Cladocera spp. (other)",80
+2019,2019-03-21,"Scapholeberis mucronata",0,"Cladocera spp. (other)",80
+2019,2019-03-21,"Pleuroxus uncinatus",0,"Cladocera spp. (other)",80
+2019,2019-03-27,"Cyclopoida sp.",2.55,"Copepoda spp.",86
+2019,2019-03-27,"Calanoida sp.",0.55,"Copepoda spp.",86
+2019,2019-03-27,"Ostracoda sp.",0,"Ostracoda sp.",86
+2019,2019-03-27,"Bosmina longirostris",0.025,"Cladocera spp. (other)",86
+2019,2019-03-27,"Ilyocryptus agilis",0.625,"Cladocera spp. (other)",86
+2019,2019-03-27,"Alona rectangula",0.025,"Cladocera spp. (other)",86
+2019,2019-03-27,"Daphnia galeata",0.7,"Daphnia spp.",86
+2019,2019-03-27,"Daphnia magna",0.475,"Daphnia spp.",86
+2019,2019-03-27,"Daphnia pulicaria",0.15,"Daphnia spp.",86
+2019,2019-03-27,"Macrothrix laticornis",0,"Cladocera spp. (other)",86
+2019,2019-03-27,"Chydorus sphaericus",0,"Cladocera spp. (other)",86
+2019,2019-03-27,"Simocephalus vetulus",0,"Cladocera spp. (other)",86
+2019,2019-03-27,"Leydigia quadrangularis",0,"Cladocera spp. (other)",86
+2019,2019-03-27,"Scapholeberis mucronata",0,"Cladocera spp. (other)",86
+2019,2019-03-27,"Pleuroxus uncinatus",0,"Cladocera spp. (other)",86
+2019,2019-04-03,"Cyclopoida sp.",7.175,"Copepoda spp.",93
+2019,2019-04-03,"Calanoida sp.",0.15,"Copepoda spp.",93
+2019,2019-04-03,"Ostracoda sp.",0,"Ostracoda sp.",93
+2019,2019-04-03,"Bosmina longirostris",0,"Cladocera spp. (other)",93
+2019,2019-04-03,"Ilyocryptus agilis",0.1,"Cladocera spp. (other)",93
+2019,2019-04-03,"Alona rectangula",0,"Cladocera spp. (other)",93
+2019,2019-04-03,"Daphnia galeata",1.1,"Daphnia spp.",93
+2019,2019-04-03,"Daphnia magna",1.075,"Daphnia spp.",93
+2019,2019-04-03,"Daphnia pulicaria",0.575,"Daphnia spp.",93
+2019,2019-04-03,"Macrothrix laticornis",0,"Cladocera spp. (other)",93
+2019,2019-04-03,"Chydorus sphaericus",0,"Cladocera spp. (other)",93
+2019,2019-04-03,"Simocephalus vetulus",0,"Cladocera spp. (other)",93
+2019,2019-04-03,"Leydigia quadrangularis",0,"Cladocera spp. (other)",93
+2019,2019-04-03,"Scapholeberis mucronata",0,"Cladocera spp. (other)",93
+2019,2019-04-03,"Pleuroxus uncinatus",0.025,"Cladocera spp. (other)",93
+2019,2019-04-19,"Cyclopoida sp.",18.9916666666667,"Copepoda spp.",109
+2019,2019-04-19,"Calanoida sp.",2.15,"Copepoda spp.",109
+2019,2019-04-19,"Ostracoda sp.",0,"Ostracoda sp.",109
+2019,2019-04-19,"Bosmina longirostris",0.358333333333333,"Cladocera spp. (other)",109
+2019,2019-04-19,"Ilyocryptus agilis",1.075,"Cladocera spp. (other)",109
+2019,2019-04-19,"Alona rectangula",0.358333333333333,"Cladocera spp. (other)",109
+2019,2019-04-19,"Daphnia galeata",199.233333333333,"Daphnia spp.",109
+2019,2019-04-19,"Daphnia magna",5.73333333333333,"Daphnia spp.",109
+2019,2019-04-19,"Daphnia pulicaria",26.5166666666667,"Daphnia spp.",109
+2019,2019-04-19,"Macrothrix laticornis",0,"Cladocera spp. (other)",109
+2019,2019-04-19,"Chydorus sphaericus",0,"Cladocera spp. (other)",109
+2019,2019-04-19,"Simocephalus vetulus",0,"Cladocera spp. (other)",109
+2019,2019-04-19,"Leydigia quadrangularis",0,"Cladocera spp. (other)",109
+2019,2019-04-19,"Scapholeberis mucronata",0,"Cladocera spp. (other)",109
+2019,2019-04-19,"Pleuroxus uncinatus",0,"Cladocera spp. (other)",109
+2019,2019-04-25,"Cyclopoida sp.",18.8125,"Copepoda spp.",115
+2019,2019-04-25,"Calanoida sp.",8.0625,"Copepoda spp.",115
+2019,2019-04-25,"Ostracoda sp.",0,"Ostracoda sp.",115
+2019,2019-04-25,"Bosmina longirostris",0.5375,"Cladocera spp. (other)",115
+2019,2019-04-25,"Ilyocryptus agilis",2.6875,"Cladocera spp. (other)",115
+2019,2019-04-25,"Alona rectangula",0,"Cladocera spp. (other)",115
+2019,2019-04-25,"Daphnia galeata",146.2,"Daphnia spp.",115
+2019,2019-04-25,"Daphnia magna",6.9875,"Daphnia spp.",115
+2019,2019-04-25,"Daphnia pulicaria",28.4875,"Daphnia spp.",115
+2019,2019-04-25,"Macrothrix laticornis",0,"Cladocera spp. (other)",115
+2019,2019-04-25,"Chydorus sphaericus",0,"Cladocera spp. (other)",115
+2019,2019-04-25,"Simocephalus vetulus",0,"Cladocera spp. (other)",115
+2019,2019-04-25,"Leydigia quadrangularis",0,"Cladocera spp. (other)",115
+2019,2019-04-25,"Scapholeberis mucronata",0,"Cladocera spp. (other)",115
+2019,2019-04-25,"Pleuroxus uncinatus",0,"Cladocera spp. (other)",115
+2019,2019-05-02,"Cyclopoida sp.",0.2,"Copepoda spp.",122
+2019,2019-05-02,"Calanoida sp.",2.875,"Copepoda spp.",122
+2019,2019-05-02,"Ostracoda sp.",0.05,"Ostracoda sp.",122
+2019,2019-05-02,"Bosmina longirostris",0,"Cladocera spp. (other)",122
+2019,2019-05-02,"Ilyocryptus agilis",0.2,"Cladocera spp. (other)",122
+2019,2019-05-02,"Alona rectangula",0.2,"Cladocera spp. (other)",122
+2019,2019-05-02,"Daphnia galeata",1.45,"Daphnia spp.",122
+2019,2019-05-02,"Daphnia magna",2.75,"Daphnia spp.",122
+2019,2019-05-02,"Daphnia pulicaria",1.7,"Daphnia spp.",122
+2019,2019-05-02,"Macrothrix laticornis",0.05,"Cladocera spp. (other)",122
+2019,2019-05-02,"Chydorus sphaericus",0,"Cladocera spp. (other)",122
+2019,2019-05-02,"Simocephalus vetulus",0,"Cladocera spp. (other)",122
+2019,2019-05-02,"Leydigia quadrangularis",0,"Cladocera spp. (other)",122
+2019,2019-05-02,"Scapholeberis mucronata",0,"Cladocera spp. (other)",122
+2019,2019-05-02,"Pleuroxus uncinatus",0,"Cladocera spp. (other)",122
+2019,2019-05-09,"Cyclopoida sp.",2.86666666666667,"Copepoda spp.",129
+2019,2019-05-09,"Calanoida sp.",1.79166666666667,"Copepoda spp.",129
+2019,2019-05-09,"Ostracoda sp.",0,"Ostracoda sp.",129
+2019,2019-05-09,"Bosmina longirostris",0,"Cladocera spp. (other)",129
+2019,2019-05-09,"Ilyocryptus agilis",0,"Cladocera spp. (other)",129
+2019,2019-05-09,"Alona rectangula",0,"Cladocera spp. (other)",129
+2019,2019-05-09,"Daphnia galeata",52.675,"Daphnia spp.",129
+2019,2019-05-09,"Daphnia magna",16.8416666666667,"Daphnia spp.",129
+2019,2019-05-09,"Daphnia pulicaria",81.3416666666667,"Daphnia spp.",129
+2019,2019-05-09,"Macrothrix laticornis",0,"Cladocera spp. (other)",129
+2019,2019-05-09,"Chydorus sphaericus",0,"Cladocera spp. (other)",129
+2019,2019-05-09,"Simocephalus vetulus",0,"Cladocera spp. (other)",129
+2019,2019-05-09,"Leydigia quadrangularis",0,"Cladocera spp. (other)",129
+2019,2019-05-09,"Scapholeberis mucronata",0,"Cladocera spp. (other)",129
+2019,2019-05-09,"Pleuroxus uncinatus",0,"Cladocera spp. (other)",129
+2019,2019-05-16,"Cyclopoida sp.",2.825,"Copepoda spp.",136
+2019,2019-05-16,"Calanoida sp.",1.7,"Copepoda spp.",136
+2019,2019-05-16,"Ostracoda sp.",0.025,"Ostracoda sp.",136
+2019,2019-05-16,"Bosmina longirostris",0,"Cladocera spp. (other)",136
+2019,2019-05-16,"Ilyocryptus agilis",0.025,"Cladocera spp. (other)",136
+2019,2019-05-16,"Alona rectangula",0,"Cladocera spp. (other)",136
+2019,2019-05-16,"Daphnia galeata",1.375,"Daphnia spp.",136
+2019,2019-05-16,"Daphnia magna",0.825,"Daphnia spp.",136
+2019,2019-05-16,"Daphnia pulicaria",2.425,"Daphnia spp.",136
+2019,2019-05-16,"Macrothrix laticornis",0.15,"Cladocera spp. (other)",136
+2019,2019-05-16,"Chydorus sphaericus",0.7,"Cladocera spp. (other)",136
+2019,2019-05-16,"Simocephalus vetulus",0.025,"Cladocera spp. (other)",136
+2019,2019-05-16,"Leydigia quadrangularis",0.025,"Cladocera spp. (other)",136
+2019,2019-05-16,"Scapholeberis mucronata",0,"Cladocera spp. (other)",136
+2019,2019-05-16,"Pleuroxus uncinatus",0,"Cladocera spp. (other)",136
+2019,2019-05-20,"Cyclopoida sp.",0.645,"Copepoda spp.",140
+2019,2019-05-20,"Calanoida sp.",2.15,"Copepoda spp.",140
+2019,2019-05-20,"Ostracoda sp.",0.215,"Ostracoda sp.",140
+2019,2019-05-20,"Bosmina longirostris",0,"Cladocera spp. (other)",140
+2019,2019-05-20,"Ilyocryptus agilis",0,"Cladocera spp. (other)",140
+2019,2019-05-20,"Alona rectangula",0,"Cladocera spp. (other)",140
+2019,2019-05-20,"Daphnia galeata",14.405,"Daphnia spp.",140
+2019,2019-05-20,"Daphnia magna",12.685,"Daphnia spp.",140
+2019,2019-05-20,"Daphnia pulicaria",36.335,"Daphnia spp.",140
+2019,2019-05-20,"Macrothrix laticornis",0,"Cladocera spp. (other)",140
+2019,2019-05-20,"Chydorus sphaericus",0,"Cladocera spp. (other)",140
+2019,2019-05-20,"Simocephalus vetulus",0,"Cladocera spp. (other)",140
+2019,2019-05-20,"Leydigia quadrangularis",0,"Cladocera spp. (other)",140
+2019,2019-05-20,"Scapholeberis mucronata",0.43,"Cladocera spp. (other)",140
+2019,2019-05-20,"Pleuroxus uncinatus",0.215,"Cladocera spp. (other)",140
+2019,2019-05-31,"Cyclopoida sp.",4.703125,"Copepoda spp.",151
+2019,2019-05-31,"Calanoida sp.",2.6875,"Copepoda spp.",151
+2019,2019-05-31,"Ostracoda sp.",0,"Ostracoda sp.",151
+2019,2019-05-31,"Bosmina longirostris",0,"Cladocera spp. (other)",151
+2019,2019-05-31,"Ilyocryptus agilis",0,"Cladocera spp. (other)",151
+2019,2019-05-31,"Alona rectangula",0.134375,"Cladocera spp. (other)",151
+2019,2019-05-31,"Daphnia galeata",29.83125,"Daphnia spp.",151
+2019,2019-05-31,"Daphnia magna",4.165625,"Daphnia spp.",151
+2019,2019-05-31,"Daphnia pulicaria",18.8125,"Daphnia spp.",151
+2019,2019-05-31,"Macrothrix laticornis",0.80625,"Cladocera spp. (other)",151
+2019,2019-05-31,"Chydorus sphaericus",0.134375,"Cladocera spp. (other)",151
+2019,2019-05-31,"Simocephalus vetulus",0,"Cladocera spp. (other)",151
+2019,2019-05-31,"Leydigia quadrangularis",0.26875,"Cladocera spp. (other)",151
+2019,2019-05-31,"Scapholeberis mucronata",5.10625,"Cladocera spp. (other)",151
+2019,2019-05-31,"Pleuroxus uncinatus",0,"Cladocera spp. (other)",151
+2019,2019-06-04,"Cyclopoida sp.",1.075,"Copepoda spp.",155
+2019,2019-06-04,"Calanoida sp.",5.52857142857143,"Copepoda spp.",155
+2019,2019-06-04,"Ostracoda sp.",0,"Ostracoda sp.",155
+2019,2019-06-04,"Bosmina longirostris",0,"Cladocera spp. (other)",155
+2019,2019-06-04,"Ilyocryptus agilis",0,"Cladocera spp. (other)",155
+2019,2019-06-04,"Alona rectangula",0.153571428571429,"Cladocera spp. (other)",155
+2019,2019-06-04,"Daphnia galeata",14.8964285714286,"Daphnia spp.",155
+2019,2019-06-04,"Daphnia magna",31.9428571428571,"Daphnia spp.",155
+2019,2019-06-04,"Daphnia pulicaria",19.5035714285714,"Daphnia spp.",155
+2019,2019-06-04,"Macrothrix laticornis",0,"Cladocera spp. (other)",155
+2019,2019-06-04,"Chydorus sphaericus",0.153571428571429,"Cladocera spp. (other)",155
+2019,2019-06-04,"Simocephalus vetulus",0,"Cladocera spp. (other)",155
+2019,2019-06-04,"Leydigia quadrangularis",0.153571428571429,"Cladocera spp. (other)",155
+2019,2019-06-04,"Scapholeberis mucronata",8.13928571428571,"Cladocera spp. (other)",155
+2019,2019-06-04,"Pleuroxus uncinatus",0.307142857142857,"Cladocera spp. (other)",155
+2019,2019-06-13,"Cyclopoida sp.",0.586363636363636,"Copepoda spp.",164
+2019,2019-06-13,"Calanoida sp.",7.525,"Copepoda spp.",164
+2019,2019-06-13,"Ostracoda sp.",0,"Ostracoda sp.",164
+2019,2019-06-13,"Bosmina longirostris",0.684090909090909,"Cladocera spp. (other)",164
+2019,2019-06-13,"Ilyocryptus agilis",0,"Cladocera spp. (other)",164
+2019,2019-06-13,"Alona rectangula",0.0977272727272727,"Cladocera spp. (other)",164
+2019,2019-06-13,"Daphnia galeata",2.34545454545455,"Daphnia spp.",164
+2019,2019-06-13,"Daphnia magna",6.59659090909091,"Daphnia spp.",164
+2019,2019-06-13,"Daphnia pulicaria",2.93181818181818,"Daphnia spp.",164
+2019,2019-06-13,"Macrothrix laticornis",0,"Cladocera spp. (other)",164
+2019,2019-06-13,"Chydorus sphaericus",0.781818181818182,"Cladocera spp. (other)",164
+2019,2019-06-13,"Simocephalus vetulus",0,"Cladocera spp. (other)",164
+2019,2019-06-13,"Leydigia quadrangularis",0,"Cladocera spp. (other)",164
+2019,2019-06-13,"Scapholeberis mucronata",4.39772727272727,"Cladocera spp. (other)",164
+2019,2019-06-13,"Pleuroxus uncinatus",0,"Cladocera spp. (other)",164
+2019,2019-06-26,"Cyclopoida sp.",0.225,"Copepoda spp.",177
+2019,2019-06-26,"Calanoida sp.",0,"Copepoda spp.",177
+2019,2019-06-26,"Ostracoda sp.",0,"Ostracoda sp.",177
+2019,2019-06-26,"Bosmina longirostris",0,"Cladocera spp. (other)",177
+2019,2019-06-26,"Ilyocryptus agilis",0,"Cladocera spp. (other)",177
+2019,2019-06-26,"Alona rectangula",0,"Cladocera spp. (other)",177
+2019,2019-06-26,"Daphnia galeata",0,"Daphnia spp.",177
+2019,2019-06-26,"Daphnia magna",0,"Daphnia spp.",177
+2019,2019-06-26,"Daphnia pulicaria",0,"Daphnia spp.",177
+2019,2019-06-26,"Macrothrix laticornis",0,"Cladocera spp. (other)",177
+2019,2019-06-26,"Chydorus sphaericus",0.125,"Cladocera spp. (other)",177
+2019,2019-06-26,"Simocephalus vetulus",0,"Cladocera spp. (other)",177
+2019,2019-06-26,"Leydigia quadrangularis",0,"Cladocera spp. (other)",177
+2019,2019-06-26,"Scapholeberis mucronata",0,"Cladocera spp. (other)",177
+2019,2019-06-26,"Pleuroxus uncinatus",0,"Cladocera spp. (other)",177
+2019,2019-07-03,"Cyclopoida sp.",9.025,"Copepoda spp.",184
+2019,2019-07-03,"Calanoida sp.",0.45,"Copepoda spp.",184
+2019,2019-07-03,"Ostracoda sp.",0.125,"Ostracoda sp.",184
+2019,2019-07-03,"Bosmina longirostris",0,"Cladocera spp. (other)",184
+2019,2019-07-03,"Ilyocryptus agilis",0,"Cladocera spp. (other)",184
+2019,2019-07-03,"Alona rectangula",0.075,"Cladocera spp. (other)",184
+2019,2019-07-03,"Daphnia galeata",0,"Daphnia spp.",184
+2019,2019-07-03,"Daphnia magna",0,"Daphnia spp.",184
+2019,2019-07-03,"Daphnia pulicaria",0,"Daphnia spp.",184
+2019,2019-07-03,"Macrothrix laticornis",0,"Cladocera spp. (other)",184
+2019,2019-07-03,"Chydorus sphaericus",1.175,"Cladocera spp. (other)",184
+2019,2019-07-03,"Simocephalus vetulus",0.3,"Cladocera spp. (other)",184
+2019,2019-07-03,"Leydigia quadrangularis",0,"Cladocera spp. (other)",184
+2019,2019-07-03,"Scapholeberis mucronata",0.075,"Cladocera spp. (other)",184
+2019,2019-07-03,"Pleuroxus uncinatus",0.05,"Cladocera spp. (other)",184
+2019,2019-07-10,"Cyclopoida sp.",12.025,"Copepoda spp.",191
+2019,2019-07-10,"Calanoida sp.",1.5,"Copepoda spp.",191
+2019,2019-07-10,"Ostracoda sp.",0.05,"Ostracoda sp.",191
+2019,2019-07-10,"Bosmina longirostris",0,"Cladocera spp. (other)",191
+2019,2019-07-10,"Ilyocryptus agilis",0,"Cladocera spp. (other)",191
+2019,2019-07-10,"Alona rectangula",0,"Cladocera spp. (other)",191
+2019,2019-07-10,"Daphnia galeata",0,"Daphnia spp.",191
+2019,2019-07-10,"Daphnia magna",0,"Daphnia spp.",191
+2019,2019-07-10,"Daphnia pulicaria",0,"Daphnia spp.",191
+2019,2019-07-10,"Macrothrix laticornis",0,"Cladocera spp. (other)",191
+2019,2019-07-10,"Chydorus sphaericus",0.225,"Cladocera spp. (other)",191
+2019,2019-07-10,"Simocephalus vetulus",0,"Cladocera spp. (other)",191
+2019,2019-07-10,"Leydigia quadrangularis",0,"Cladocera spp. (other)",191
+2019,2019-07-10,"Scapholeberis mucronata",0.025,"Cladocera spp. (other)",191
+2019,2019-07-10,"Pleuroxus uncinatus",0,"Cladocera spp. (other)",191
+2019,2019-07-17,"Cyclopoida sp.",0.525,"Copepoda spp.",198
+2019,2019-07-17,"Calanoida sp.",0.6,"Copepoda spp.",198
+2019,2019-07-17,"Ostracoda sp.",0,"Ostracoda sp.",198
+2019,2019-07-17,"Bosmina longirostris",0,"Cladocera spp. (other)",198
+2019,2019-07-17,"Ilyocryptus agilis",0,"Cladocera spp. (other)",198
+2019,2019-07-17,"Alona rectangula",0,"Cladocera spp. (other)",198
+2019,2019-07-17,"Daphnia galeata",0,"Daphnia spp.",198
+2019,2019-07-17,"Daphnia magna",0,"Daphnia spp.",198
+2019,2019-07-17,"Daphnia pulicaria",0,"Daphnia spp.",198
+2019,2019-07-17,"Macrothrix laticornis",0,"Cladocera spp. (other)",198
+2019,2019-07-17,"Chydorus sphaericus",0.025,"Cladocera spp. (other)",198
+2019,2019-07-17,"Simocephalus vetulus",0,"Cladocera spp. (other)",198
+2019,2019-07-17,"Leydigia quadrangularis",0,"Cladocera spp. (other)",198
+2019,2019-07-17,"Scapholeberis mucronata",0,"Cladocera spp. (other)",198
+2019,2019-07-17,"Pleuroxus uncinatus",0,"Cladocera spp. (other)",198
+2019,2019-07-23,"Cyclopoida sp.",2.625,"Copepoda spp.",204
+2019,2019-07-23,"Calanoida sp.",0.05,"Copepoda spp.",204
+2019,2019-07-23,"Ostracoda sp.",0.05,"Ostracoda sp.",204
+2019,2019-07-23,"Bosmina longirostris",0,"Cladocera spp. (other)",204
+2019,2019-07-23,"Ilyocryptus agilis",0.025,"Cladocera spp. (other)",204
+2019,2019-07-23,"Alona rectangula",0,"Cladocera spp. (other)",204
+2019,2019-07-23,"Daphnia galeata",0,"Daphnia spp.",204
+2019,2019-07-23,"Daphnia magna",0,"Daphnia spp.",204
+2019,2019-07-23,"Daphnia pulicaria",0,"Daphnia spp.",204
+2019,2019-07-23,"Macrothrix laticornis",0,"Cladocera spp. (other)",204
+2019,2019-07-23,"Chydorus sphaericus",0,"Cladocera spp. (other)",204
+2019,2019-07-23,"Simocephalus vetulus",0,"Cladocera spp. (other)",204
+2019,2019-07-23,"Leydigia quadrangularis",0,"Cladocera spp. (other)",204
+2019,2019-07-23,"Scapholeberis mucronata",0,"Cladocera spp. (other)",204
+2019,2019-07-23,"Pleuroxus uncinatus",0,"Cladocera spp. (other)",204
+2019,2019-07-30,"Cyclopoida sp.",0.975,"Copepoda spp.",211
+2019,2019-07-30,"Calanoida sp.",0,"Copepoda spp.",211
+2019,2019-07-30,"Ostracoda sp.",0.025,"Ostracoda sp.",211
+2019,2019-07-30,"Bosmina longirostris",0,"Cladocera spp. (other)",211
+2019,2019-07-30,"Ilyocryptus agilis",0,"Cladocera spp. (other)",211
+2019,2019-07-30,"Alona rectangula",0,"Cladocera spp. (other)",211
+2019,2019-07-30,"Daphnia galeata",0,"Daphnia spp.",211
+2019,2019-07-30,"Daphnia magna",0,"Daphnia spp.",211
+2019,2019-07-30,"Daphnia pulicaria",0,"Daphnia spp.",211
+2019,2019-07-30,"Macrothrix laticornis",0,"Cladocera spp. (other)",211
+2019,2019-07-30,"Chydorus sphaericus",0.025,"Cladocera spp. (other)",211
+2019,2019-07-30,"Simocephalus vetulus",0,"Cladocera spp. (other)",211
+2019,2019-07-30,"Leydigia quadrangularis",0,"Cladocera spp. (other)",211
+2019,2019-07-30,"Scapholeberis mucronata",0,"Cladocera spp. (other)",211
+2019,2019-07-30,"Pleuroxus uncinatus",0,"Cladocera spp. (other)",211
+2019,2019-08-07,"Cyclopoida sp.",0.025,"Copepoda spp.",219
+2019,2019-08-07,"Calanoida sp.",0.325,"Copepoda spp.",219
+2019,2019-08-07,"Ostracoda sp.",0,"Ostracoda sp.",219
+2019,2019-08-07,"Bosmina longirostris",0,"Cladocera spp. (other)",219
+2019,2019-08-07,"Ilyocryptus agilis",0,"Cladocera spp. (other)",219
+2019,2019-08-07,"Alona rectangula",0,"Cladocera spp. (other)",219
+2019,2019-08-07,"Daphnia galeata",0,"Daphnia spp.",219
+2019,2019-08-07,"Daphnia magna",0,"Daphnia spp.",219
+2019,2019-08-07,"Daphnia pulicaria",0,"Daphnia spp.",219
+2019,2019-08-07,"Macrothrix laticornis",0,"Cladocera spp. (other)",219
+2019,2019-08-07,"Chydorus sphaericus",0,"Cladocera spp. (other)",219
+2019,2019-08-07,"Simocephalus vetulus",0,"Cladocera spp. (other)",219
+2019,2019-08-07,"Leydigia quadrangularis",0,"Cladocera spp. (other)",219
+2019,2019-08-07,"Scapholeberis mucronata",0,"Cladocera spp. (other)",219
+2019,2019-08-07,"Pleuroxus uncinatus",0,"Cladocera spp. (other)",219
+2019,2019-08-14,"Cyclopoida sp.",0,"Copepoda spp.",226
+2019,2019-08-14,"Calanoida sp.",0.075,"Copepoda spp.",226
+2019,2019-08-14,"Ostracoda sp.",0,"Ostracoda sp.",226
+2019,2019-08-14,"Bosmina longirostris",0,"Cladocera spp. (other)",226
+2019,2019-08-14,"Ilyocryptus agilis",0,"Cladocera spp. (other)",226
+2019,2019-08-14,"Alona rectangula",0,"Cladocera spp. (other)",226
+2019,2019-08-14,"Daphnia galeata",0,"Daphnia spp.",226
+2019,2019-08-14,"Daphnia magna",0,"Daphnia spp.",226
+2019,2019-08-14,"Daphnia pulicaria",0,"Daphnia spp.",226
+2019,2019-08-14,"Macrothrix laticornis",0,"Cladocera spp. (other)",226
+2019,2019-08-14,"Chydorus sphaericus",0,"Cladocera spp. (other)",226
+2019,2019-08-14,"Simocephalus vetulus",0,"Cladocera spp. (other)",226
+2019,2019-08-14,"Leydigia quadrangularis",0,"Cladocera spp. (other)",226
+2019,2019-08-14,"Scapholeberis mucronata",0,"Cladocera spp. (other)",226
+2019,2019-08-14,"Pleuroxus uncinatus",0,"Cladocera spp. (other)",226
+2019,2019-08-20,"Cyclopoida sp.",0,"Copepoda spp.",232
+2019,2019-08-20,"Calanoida sp.",0,"Copepoda spp.",232
+2019,2019-08-20,"Ostracoda sp.",0,"Ostracoda sp.",232
+2019,2019-08-20,"Bosmina longirostris",0,"Cladocera spp. (other)",232
+2019,2019-08-20,"Ilyocryptus agilis",0,"Cladocera spp. (other)",232
+2019,2019-08-20,"Alona rectangula",0,"Cladocera spp. (other)",232
+2019,2019-08-20,"Daphnia galeata",0,"Daphnia spp.",232
+2019,2019-08-20,"Daphnia magna",0,"Daphnia spp.",232
+2019,2019-08-20,"Daphnia pulicaria",0,"Daphnia spp.",232
+2019,2019-08-20,"Macrothrix laticornis",0,"Cladocera spp. (other)",232
+2019,2019-08-20,"Chydorus sphaericus",0,"Cladocera spp. (other)",232
+2019,2019-08-20,"Simocephalus vetulus",0,"Cladocera spp. (other)",232
+2019,2019-08-20,"Leydigia quadrangularis",0,"Cladocera spp. (other)",232
+2019,2019-08-20,"Scapholeberis mucronata",0,"Cladocera spp. (other)",232
+2019,2019-08-20,"Pleuroxus uncinatus",0,"Cladocera spp. (other)",232
+2019,2019-08-28,"Cyclopoida sp.",1.875,"Copepoda spp.",240
+2019,2019-08-28,"Calanoida sp.",0.075,"Copepoda spp.",240
+2019,2019-08-28,"Ostracoda sp.",0,"Ostracoda sp.",240
+2019,2019-08-28,"Bosmina longirostris",0,"Cladocera spp. (other)",240
+2019,2019-08-28,"Ilyocryptus agilis",0,"Cladocera spp. (other)",240
+2019,2019-08-28,"Alona rectangula",0,"Cladocera spp. (other)",240
+2019,2019-08-28,"Daphnia galeata",0,"Daphnia spp.",240
+2019,2019-08-28,"Daphnia magna",0,"Daphnia spp.",240
+2019,2019-08-28,"Daphnia pulicaria",0,"Daphnia spp.",240
+2019,2019-08-28,"Macrothrix laticornis",0,"Cladocera spp. (other)",240
+2019,2019-08-28,"Chydorus sphaericus",0,"Cladocera spp. (other)",240
+2019,2019-08-28,"Simocephalus vetulus",0,"Cladocera spp. (other)",240
+2019,2019-08-28,"Leydigia quadrangularis",0,"Cladocera spp. (other)",240
+2019,2019-08-28,"Scapholeberis mucronata",0,"Cladocera spp. (other)",240
+2019,2019-08-28,"Pleuroxus uncinatus",0,"Cladocera spp. (other)",240
+2019,2019-09-04,"Cyclopoida sp.",0.15,"Copepoda spp.",247
+2019,2019-09-04,"Calanoida sp.",1.15,"Copepoda spp.",247
+2019,2019-09-04,"Ostracoda sp.",0,"Ostracoda sp.",247
+2019,2019-09-04,"Bosmina longirostris",0,"Cladocera spp. (other)",247
+2019,2019-09-04,"Ilyocryptus agilis",0,"Cladocera spp. (other)",247
+2019,2019-09-04,"Alona rectangula",0,"Cladocera spp. (other)",247
+2019,2019-09-04,"Daphnia galeata",0,"Daphnia spp.",247
+2019,2019-09-04,"Daphnia magna",0,"Daphnia spp.",247
+2019,2019-09-04,"Daphnia pulicaria",0,"Daphnia spp.",247
+2019,2019-09-04,"Macrothrix laticornis",0,"Cladocera spp. (other)",247
+2019,2019-09-04,"Chydorus sphaericus",0,"Cladocera spp. (other)",247
+2019,2019-09-04,"Simocephalus vetulus",0,"Cladocera spp. (other)",247
+2019,2019-09-04,"Leydigia quadrangularis",0,"Cladocera spp. (other)",247
+2019,2019-09-04,"Scapholeberis mucronata",0,"Cladocera spp. (other)",247
+2019,2019-09-04,"Pleuroxus uncinatus",0,"Cladocera spp. (other)",247
+2019,2019-09-24,"Cyclopoida sp.",0.05,"Copepoda spp.",267
+2019,2019-09-24,"Calanoida sp.",0.025,"Copepoda spp.",267
+2019,2019-09-24,"Ostracoda sp.",0,"Ostracoda sp.",267
+2019,2019-09-24,"Bosmina longirostris",0,"Cladocera spp. (other)",267
+2019,2019-09-24,"Ilyocryptus agilis",0,"Cladocera spp. (other)",267
+2019,2019-09-24,"Alona rectangula",0,"Cladocera spp. (other)",267
+2019,2019-09-24,"Daphnia galeata",0,"Daphnia spp.",267
+2019,2019-09-24,"Daphnia magna",0,"Daphnia spp.",267
+2019,2019-09-24,"Daphnia pulicaria",0,"Daphnia spp.",267
+2019,2019-09-24,"Macrothrix laticornis",0,"Cladocera spp. (other)",267
+2019,2019-09-24,"Chydorus sphaericus",0,"Cladocera spp. (other)",267
+2019,2019-09-24,"Simocephalus vetulus",0,"Cladocera spp. (other)",267
+2019,2019-09-24,"Leydigia quadrangularis",0,"Cladocera spp. (other)",267
+2019,2019-09-24,"Scapholeberis mucronata",0,"Cladocera spp. (other)",267
+2019,2019-09-24,"Pleuroxus uncinatus",0,"Cladocera spp. (other)",267
+2019,2019-10-02,"Cyclopoida sp.",0.7,"Copepoda spp.",275
+2019,2019-10-02,"Calanoida sp.",0.8,"Copepoda spp.",275
+2019,2019-10-02,"Ostracoda sp.",0,"Ostracoda sp.",275
+2019,2019-10-02,"Bosmina longirostris",0,"Cladocera spp. (other)",275
+2019,2019-10-02,"Ilyocryptus agilis",0,"Cladocera spp. (other)",275
+2019,2019-10-02,"Alona rectangula",0,"Cladocera spp. (other)",275
+2019,2019-10-02,"Daphnia galeata",0,"Daphnia spp.",275
+2019,2019-10-02,"Daphnia magna",0,"Daphnia spp.",275
+2019,2019-10-02,"Daphnia pulicaria",0,"Daphnia spp.",275
+2019,2019-10-02,"Macrothrix laticornis",0,"Cladocera spp. (other)",275
+2019,2019-10-02,"Chydorus sphaericus",0,"Cladocera spp. (other)",275
+2019,2019-10-02,"Simocephalus vetulus",0,"Cladocera spp. (other)",275
+2019,2019-10-02,"Leydigia quadrangularis",0,"Cladocera spp. (other)",275
+2019,2019-10-02,"Scapholeberis mucronata",0,"Cladocera spp. (other)",275
+2019,2019-10-02,"Pleuroxus uncinatus",0,"Cladocera spp. (other)",275
+2019,2019-10-09,"Cyclopoida sp.",0,"Copepoda spp.",282
+2019,2019-10-09,"Calanoida sp.",0.025,"Copepoda spp.",282
+2019,2019-10-09,"Ostracoda sp.",0,"Ostracoda sp.",282
+2019,2019-10-09,"Bosmina longirostris",0,"Cladocera spp. (other)",282
+2019,2019-10-09,"Ilyocryptus agilis",0,"Cladocera spp. (other)",282
+2019,2019-10-09,"Alona rectangula",0,"Cladocera spp. (other)",282
+2019,2019-10-09,"Daphnia galeata",0,"Daphnia spp.",282
+2019,2019-10-09,"Daphnia magna",0,"Daphnia spp.",282
+2019,2019-10-09,"Daphnia pulicaria",0,"Daphnia spp.",282
+2019,2019-10-09,"Macrothrix laticornis",0,"Cladocera spp. (other)",282
+2019,2019-10-09,"Chydorus sphaericus",0,"Cladocera spp. (other)",282
+2019,2019-10-09,"Simocephalus vetulus",0,"Cladocera spp. (other)",282
+2019,2019-10-09,"Leydigia quadrangularis",0,"Cladocera spp. (other)",282
+2019,2019-10-09,"Scapholeberis mucronata",0,"Cladocera spp. (other)",282
+2019,2019-10-09,"Pleuroxus uncinatus",0,"Cladocera spp. (other)",282
+2019,2019-10-17,"Cyclopoida sp.",1.15,"Copepoda spp.",290
+2019,2019-10-17,"Calanoida sp.",1.25,"Copepoda spp.",290
+2019,2019-10-17,"Ostracoda sp.",0,"Ostracoda sp.",290
+2019,2019-10-17,"Bosmina longirostris",0,"Cladocera spp. (other)",290
+2019,2019-10-17,"Ilyocryptus agilis",0,"Cladocera spp. (other)",290
+2019,2019-10-17,"Alona rectangula",0,"Cladocera spp. (other)",290
+2019,2019-10-17,"Daphnia galeata",0,"Daphnia spp.",290
+2019,2019-10-17,"Daphnia magna",0,"Daphnia spp.",290
+2019,2019-10-17,"Daphnia pulicaria",0,"Daphnia spp.",290
+2019,2019-10-17,"Macrothrix laticornis",0,"Cladocera spp. (other)",290
+2019,2019-10-17,"Chydorus sphaericus",0.05,"Cladocera spp. (other)",290
+2019,2019-10-17,"Simocephalus vetulus",0,"Cladocera spp. (other)",290
+2019,2019-10-17,"Leydigia quadrangularis",0,"Cladocera spp. (other)",290
+2019,2019-10-17,"Scapholeberis mucronata",0,"Cladocera spp. (other)",290
+2019,2019-10-17,"Pleuroxus uncinatus",0,"Cladocera spp. (other)",290
+2019,2019-10-24,"Cyclopoida sp.",1.1,"Copepoda spp.",297
+2019,2019-10-24,"Calanoida sp.",1.5,"Copepoda spp.",297
+2019,2019-10-24,"Ostracoda sp.",0,"Ostracoda sp.",297
+2019,2019-10-24,"Bosmina longirostris",0,"Cladocera spp. (other)",297
+2019,2019-10-24,"Ilyocryptus agilis",0,"Cladocera spp. (other)",297
+2019,2019-10-24,"Alona rectangula",0.025,"Cladocera spp. (other)",297
+2019,2019-10-24,"Daphnia galeata",0,"Daphnia spp.",297
+2019,2019-10-24,"Daphnia magna",0,"Daphnia spp.",297
+2019,2019-10-24,"Daphnia pulicaria",0,"Daphnia spp.",297
+2019,2019-10-24,"Macrothrix laticornis",0,"Cladocera spp. (other)",297
+2019,2019-10-24,"Chydorus sphaericus",0,"Cladocera spp. (other)",297
+2019,2019-10-24,"Simocephalus vetulus",0,"Cladocera spp. (other)",297
+2019,2019-10-24,"Leydigia quadrangularis",0,"Cladocera spp. (other)",297
+2019,2019-10-24,"Scapholeberis mucronata",0,"Cladocera spp. (other)",297
+2019,2019-10-24,"Pleuroxus uncinatus",0,"Cladocera spp. (other)",297
+2019,2019-10-30,"Cyclopoida sp.",1.15,"Copepoda spp.",303
+2019,2019-10-30,"Calanoida sp.",5.375,"Copepoda spp.",303
+2019,2019-10-30,"Ostracoda sp.",0,"Ostracoda sp.",303
+2019,2019-10-30,"Bosmina longirostris",0,"Cladocera spp. (other)",303
+2019,2019-10-30,"Ilyocryptus agilis",0,"Cladocera spp. (other)",303
+2019,2019-10-30,"Alona rectangula",0,"Cladocera spp. (other)",303
+2019,2019-10-30,"Daphnia galeata",0,"Daphnia spp.",303
+2019,2019-10-30,"Daphnia magna",0,"Daphnia spp.",303
+2019,2019-10-30,"Daphnia pulicaria",0,"Daphnia spp.",303
+2019,2019-10-30,"Macrothrix laticornis",0,"Cladocera spp. (other)",303
+2019,2019-10-30,"Chydorus sphaericus",0,"Cladocera spp. (other)",303
+2019,2019-10-30,"Simocephalus vetulus",0,"Cladocera spp. (other)",303
+2019,2019-10-30,"Leydigia quadrangularis",0,"Cladocera spp. (other)",303
+2019,2019-10-30,"Scapholeberis mucronata",0,"Cladocera spp. (other)",303
+2019,2019-10-30,"Pleuroxus uncinatus",0,"Cladocera spp. (other)",303
+2019,2019-11-07,"Cyclopoida sp.",1.5,"Copepoda spp.",311
+2019,2019-11-07,"Calanoida sp.",1.875,"Copepoda spp.",311
+2019,2019-11-07,"Ostracoda sp.",0,"Ostracoda sp.",311
+2019,2019-11-07,"Bosmina longirostris",0,"Cladocera spp. (other)",311
+2019,2019-11-07,"Ilyocryptus agilis",0,"Cladocera spp. (other)",311
+2019,2019-11-07,"Alona rectangula",0,"Cladocera spp. (other)",311
+2019,2019-11-07,"Daphnia galeata",0,"Daphnia spp.",311
+2019,2019-11-07,"Daphnia magna",0,"Daphnia spp.",311
+2019,2019-11-07,"Daphnia pulicaria",0,"Daphnia spp.",311
+2019,2019-11-07,"Macrothrix laticornis",0,"Cladocera spp. (other)",311
+2019,2019-11-07,"Chydorus sphaericus",0,"Cladocera spp. (other)",311
+2019,2019-11-07,"Simocephalus vetulus",0,"Cladocera spp. (other)",311
+2019,2019-11-07,"Leydigia quadrangularis",0,"Cladocera spp. (other)",311
+2019,2019-11-07,"Scapholeberis mucronata",0,"Cladocera spp. (other)",311
+2019,2019-11-07,"Pleuroxus uncinatus",0,"Cladocera spp. (other)",311
+2019,2019-11-13,"Cyclopoida sp.",1,"Copepoda spp.",317
+2019,2019-11-13,"Calanoida sp.",2.775,"Copepoda spp.",317
+2019,2019-11-13,"Ostracoda sp.",0,"Ostracoda sp.",317
+2019,2019-11-13,"Bosmina longirostris",0,"Cladocera spp. (other)",317
+2019,2019-11-13,"Ilyocryptus agilis",0,"Cladocera spp. (other)",317
+2019,2019-11-13,"Alona rectangula",0,"Cladocera spp. (other)",317
+2019,2019-11-13,"Daphnia galeata",0,"Daphnia spp.",317
+2019,2019-11-13,"Daphnia magna",0,"Daphnia spp.",317
+2019,2019-11-13,"Daphnia pulicaria",0,"Daphnia spp.",317
+2019,2019-11-13,"Macrothrix laticornis",0,"Cladocera spp. (other)",317
+2019,2019-11-13,"Chydorus sphaericus",0,"Cladocera spp. (other)",317
+2019,2019-11-13,"Simocephalus vetulus",0,"Cladocera spp. (other)",317
+2019,2019-11-13,"Leydigia quadrangularis",0,"Cladocera spp. (other)",317
+2019,2019-11-13,"Scapholeberis mucronata",0,"Cladocera spp. (other)",317
+2019,2019-11-13,"Pleuroxus uncinatus",0,"Cladocera spp. (other)",317
