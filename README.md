@@ -1,6 +1,6 @@
 # Code and data for the statistical analysis in "Rapid temporal adaptation structures tolerance to toxic cyanobacteria in a natural population of the water flea Daphnia."
 
-This repository contains the code and data for the manuscript "Rapid temporal adaptation structures tolerance to toxic cyanobacteria in a natural population of the water flea Daphnia."
+This repository contains the code and data for the manuscript "Rapid temporal adaptation structures tolerance to toxic cyanobacteria in a natural population of the water flea Daphnia." In our study, we demonstrate the importance of short-term eco-(co)evolutionary dynamics in determining interactions between cyanobacteria and zooplankton grazers. We show that the composition of cyanobacteria and their toxicity for zooplankton grazers varies over short periods of time, and that the zooplankton grazer studied, the water flea <i>D. magna</i>, is able to adapt to these changes in order to reduce mortality imposed by <i>Microcystis</i>.
 
 The R-file [`Main_script.R`](./Main_script.R) constitutes the principal script for reading, processing, visualizing, and analyzing the experimental data. The csv-file [`summary_data.csv`](./summary_data.csv) contains the survival data for each of the time intervals summarized per experimental unit and is read in the main script. The Stan-files [`Binomial_GLMM.stan`](./Binomial_GLMM.stan) and [`Interval_censored_survival.stan`](./Interval_censored_survival.stan) contain the probabilistic models used for the Bayesian analyses in the main script.
 
