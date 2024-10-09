@@ -33,9 +33,95 @@ mean(summary_data$D12_alive/summary_data$N_individuals)
 sd(summary_data$D12_alive/summary_data$N_individuals)/sqrt(sum(summary_data$N_individuals))*100
 
 #-------------------------------------------------------------------------------
-# Exploratory visualization
+# Exploratory visualizations
 #-------------------------------------------------------------------------------
 
+# Survival at day 12: per individual, per experimental unit, and per experimental treatment
+(((summary_data %>%
+     filter(Daph_year == 2018) %>%
+     rowwise() %>%
+     mutate(individuals = list(1:N_individuals),
+            status = list(c(rep(1, D12_alive), rep(0, N_individuals - D12_alive)))) %>%
+     unnest(cols = c(individuals, status)) %>%
+     ggplot(aes(x = MC_strain, y = individuals, alpha = status, color = Synchronicity)) +
+     geom_point(size = 3, shape = 16) +
+     scale_x_discrete("<b><i>Microcystis</i> strains</b>") +
+     scale_color_manual("", values = c("#CE178C","#0090C8"), guide = "none") +
+     scale_alpha_continuous("", range = c(0.2, 1), breaks = c(0,1), labels = c("Dead", "Alive"), guide = "none") +
+     coord_cartesian(clip = "off") +
+     facet_nested(paste0("<b>", Daph_year, "</b>") ~ paste0("<b><i>Daphnia</i> clonal lineages</b>") + Daph_clone, scales = "free_x", switch = "y") +
+     ggtitle("(a)") +
+     theme(plot.title = element_text(hjust = 0, face = "bold", size = 8),
+           plot.title.position = "plot",
+           panel.background = element_blank(),
+           panel.grid = element_blank(),
+           strip.background = element_blank(),
+           strip.text.x.top = element_markdown(size = 7),
+           strip.text.y.left = element_markdown(size = 7),
+           axis.title.x = element_markdown(size = 7),
+           axis.title.y = element_blank(),
+           axis.text.x = element_text(size = 7),
+           axis.text.y = element_blank(),
+           axis.ticks = element_blank(),
+           legend.key = element_blank(),
+           legend.text = element_text(size = 7))) /
+    (summary_data %>%
+       filter(Daph_year == 2019) %>%
+       rowwise() %>%
+       mutate(individuals = list(1:N_individuals),
+              status = list(c(rep(1, D12_alive), rep(0, N_individuals - D12_alive)))) %>%
+       unnest(cols = c(individuals, status)) %>%
+       ggplot(aes(x = MC_strain, y = individuals, alpha = status, color = Synchronicity)) +
+       geom_point(size = 3, shape = 16) +
+       scale_x_discrete("<b><i>Microcystis</i> strains</b>") +
+       scale_color_manual("", values = c("#CE178C","#0090C8")) +
+       scale_alpha_continuous("", range = c(0.2, 1), breaks = c(0,1), labels = c("Dead", "Alive")) +
+       coord_cartesian(clip = "off") +
+       facet_nested(paste0("<b>", Daph_year, "</b>") ~ paste0("<b><i>Daphnia</i> clonal lineages</b>") + Daph_clone, scales = "free_x", switch = "y") +
+       theme(panel.background = element_blank(),
+             panel.grid = element_blank(),
+             strip.background = element_blank(),
+             strip.text.x.top = element_markdown(size = 7),
+             strip.text.y.left = element_markdown(size = 7),
+             axis.title.x = element_markdown(size = 7),
+             axis.title.y = element_blank(),
+             axis.text.x = element_text(size = 7),
+             axis.text.y = element_blank(),
+             axis.ticks = element_blank(),
+             legend.key = element_blank(),
+             legend.text = element_text(size = 7),
+             legend.position = "bottom"))) /
+   free(summary_data %>%
+          ggplot(aes(y = paste0(Daph_season, " <i>Daphnia</i>, ", MC_season, " <i>Microcystis</i>"), x = D12_alive/N_individuals, color = Synchronicity)) +
+          geom_jitter(size = 0.25, width = 0.01) +
+          stat_summary(size = 0.25) +
+          scale_y_discrete(limits = rev(c("early <i>Daphnia</i>, early <i>Microcystis</i>", "early <i>Daphnia</i>, late <i>Microcystis</i>", "late <i>Daphnia</i>, early <i>Microcystis</i>", "late <i>Daphnia</i>, late <i>Microcystis</i>"))) +
+          scale_x_continuous("Fraction of individuals surviving", breaks = seq(0, 1, by = 0.2), expand = c(0,0)) +
+          scale_color_manual("", values = c("#CE178C","#0090C8"), guide = "none") +
+          coord_cartesian(clip = "off") +
+          ggtitle("(b)") +
+          theme(plot.title = element_text(hjust = 0, face = "bold", size = 8),
+                plot.title.position = "plot",
+                panel.background = element_blank(),
+                panel.grid.major.y = element_blank(),
+                panel.grid.minor.y = element_blank(),
+                panel.grid.major.x = element_line(color = "grey93"),
+                panel.grid.minor.x = element_line(color = "grey93"),
+                strip.background = element_blank(),
+                strip.text = element_text(face = "bold", size = 7),
+                strip.placement = "outside",
+                axis.title.y = element_blank(),
+                axis.title.x = element_text(face = "bold", size = 7),
+                axis.text.x = element_text(size = 7),
+                axis.text.y = element_markdown(size = 7),
+                axis.ticks.y = element_blank(),
+                axis.line.x = element_line(color = "black"),
+                legend.key = element_blank(),
+                legend.text = element_text(size = 7)))) +
+  plot_layout(heights = c(1, 1, 2))
+ggsave("Exploratory_visualization_day12.pdf", width = 16, height = 16, units = "cm", dpi = 600)
+
+# Observed survival curves throughout the experiment
 summary_data %>%
   select(jar_ID, MC_season, Daph_season, Daph_year, N_individuals, D0_alive, D5_alive, D9_alive, D12_alive) %>%
   mutate(Daph_year = factor(Daph_year),
@@ -69,6 +155,7 @@ summary_data %>%
         legend.key.size = unit(0.3, "cm"))
 ggsave("Exploratory_visualization.png", width = 16, height = 10, units = "cm", dpi = 600)
 
+# Numerical fraction of survived individuals
 summary(summary_data$D12_alive / summary_data$N_individuals)
 
 #-------------------------------------------------------------------------------
